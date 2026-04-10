@@ -432,7 +432,7 @@ export default function Luthiers() {
               <tr>
                 <td className="font-bold"><Link href="https://www.martinguitar.com/">Martin Guitar Co*</Link></td>
                 <td>Acoustics</td>
-                <td>E220</td>
+                {/* <td>E220</td> */}
               </tr>
               <tr>
                 <td><Link href="https://www.michaelkennedyguitars.com/">Michael Kennedy Guitars</Link></td>
