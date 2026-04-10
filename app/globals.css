@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.image-container {
+  width: 100%;
+
+  > div {
+    position: unset !important;
+  }
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    max-width: 200px;
+  }
+  .image-md {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    max-width: 170px;
+  }
+  .image-sm {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    max-width: 90px;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .image-container {
+    width: 100%;
+  
+    > div {
+      position: unset !important;
+    }
+    .image {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+      max-width: 110px;
+    }
+    .image-md {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+      max-width: 90px;
+    }
+    .image-sm {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+      max-width: 60px;
+    }
+  }
+}
+
+.jotForm {
+  min-width: 100%; 
+  height:3450px; 
+  border:none; 
+  min-height:539px;
+}
+
+th, td{
+  border: 2px solid black;
+  padding: 0.25em;
+}
+tr:hover {
+  background: antiquewhite;
+}
+thead>tr:hover {
+  background: #A4CCDA;
+  cursor:default;
+}
+
+.slick-slide img {
+  padding: 0 0.25em;
+}
