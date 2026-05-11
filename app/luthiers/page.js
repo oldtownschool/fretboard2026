@@ -410,7 +410,7 @@ export default function Luthiers() {
                 {/* <td>E326</td> */}
               </tr>
               <tr>
-                <td className="font-bold"><Link href="https://www.lyonhealycorporation.com/brands/">Lyon and Healy*</Link></td>
+                <td><Link href="https://www.lyonhealycorporation.com/brands/">Lyon and Healy</Link></td>
                 <td>Acoustics</td>
                 {/* <td>E126</td> */}
               </tr>

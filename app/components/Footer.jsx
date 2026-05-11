@@ -251,7 +251,7 @@ export const Footer = () => {
               height={150}
             />
           </a>
-          <a className="flex mx-1 sm:mx-2 sm:ml-12 self-center image-sm" href="https://www.lyonhealycorporation.com/brands/" >
+          {/* <a className="flex mx-1 sm:mx-2 sm:ml-12 self-center image-sm" href="https://www.lyonhealycorporation.com/brands/" >
             <Image
               className="mix-blend-multiply image-sm"
               src="/LyonHealy.png"
@@ -259,7 +259,25 @@ export const Footer = () => {
               width={60}
               height={150}	
             />
-          </a>
+          </a> */}
+          {/* <a className="flex mx-1 sm:mx-2 sm:ml-12 self-center image-sm" href="https://www.bensonamps.com/" >
+            <Image
+              className="mix-blend-multiply image-sm"
+              src="/BensonLogo.png"
+              alt="Benson Amps"
+              width={60}
+              height={150}	
+            />
+          </a>  */}
+          {/* <a className="flex mx-1 sm:mx-2 sm:ml-12 self-center image-sm" href="https://www.lyonhealycorporation.com/brands/" >
+            <Image
+              className="mix-blend-multiply image-sm"
+              src="/LyonHealy.png"
+              alt="Lyon & Healy"
+              width={60}
+              height={150}	
+            />
+          </a>  */}
           <a className="flex mx-1 sm:mx-2 sm:ml-12 self-center image-sm" href="https://www.daddario.com/" >
             <Image
               className="mix-blend-multiply image-sm"
