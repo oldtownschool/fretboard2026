@@ -223,7 +223,7 @@ export const Footer = () => {
           <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://themusicemporium.com/" >
             <Image
               className="mix-blend-multiply image-sm"
-              src="/musicemplogo.png"
+              src="/TMElogo.png"
               alt="Music Emporium"
               width={60}
               height={150}
