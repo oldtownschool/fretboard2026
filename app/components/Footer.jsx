@@ -281,7 +281,7 @@ export const Footer = () => {
           <a className="flex mx-1 sm:mx-2 sm:ml-12 self-center image-sm" href="https://breedloveguitars.com/" >
             <Image
               className="mix-blend-multiply image-sm"
-              src="/BreedloveLogo.png"
+              src="/Breedlove_logo.png"
               alt="Breedlove"
               width={60}
               height={150}	
