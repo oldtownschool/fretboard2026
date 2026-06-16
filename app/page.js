@@ -45,16 +45,16 @@ export default function Home() {
           /> */}
         {/* </div> */}
 
-        <div className="block sm:flex sm:flex-row py-10 max-w-5xl">
+        <div className="block sm:flex sm:flex-row py-10 px-4 lg:px-0 max-w-5xl">
           <div className="w-full sm:flex sm:w-2/4">
             <Image
-              className="hidden sm:flex mx-2"
+              className="hidden lg:flex mx-2"
               src="/border.png"
               alt="border"
               width={10}
               height={400}
             />
-            <div className="px-8 sm:px-0">
+            <div className="px-4 sm:px-0">
               <Image
                 src="/Group22.png"
                 alt="banner top"
@@ -82,10 +82,10 @@ export default function Home() {
               alt="banner left"
               width={500}
               height={400}
-              className="px-8 sm:px-0 w-full"
+              className="px-4 sm:px-0 w-full"
             />
             <Image
-              className="hidden sm:flex mx-2"
+              className="hidden lg:flex mx-2"
               src="/border.png"
               alt="border"
               width={10}
