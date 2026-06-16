@@ -74,11 +74,11 @@ export default function Luthiers() {
               </tr>
               <tr>
                 <td><Link href="https://www.argonautguitarcomponents.com/">Argonaut Guitar Components</Link></td>
-                <td>Components</td>
+                <td>Electrics, Pedals</td>
                 {/* <td>E330</td> */}
               </tr>
               <tr>
-                <td><Link href="https://theacousticshoppe.com/">The Acoustic Shoppe</Link></td>
+                <td className="font-bold"><Link href="https://theacousticshoppe.com/">The Acoustic Shoppe*</Link></td>
                 <td>Acoustics</td>
                  {/* <td>W-210</td> */}
               </tr>
@@ -140,7 +140,7 @@ export default function Luthiers() {
                 {/* <td>E124</td> */}
               </tr>
               <tr>
-                <td><Link href="https://bovedainc.com/">Boveda</Link></td>
+                <td className="font-bold"><Link href="https://bovedainc.com/">Boveda*</Link></td>
                 <td>2-Way Humidity Control</td>
                 {/* <td>E328</td> */}
               </tr>
@@ -257,7 +257,7 @@ export default function Luthiers() {
               </tr>
               <tr>
                 <td><Link href="https://dammanninstruments.com/">Dammann Instruments</Link></td>
-                <td>Acoustics</td>
+                <td>Mandolins</td>
                 {/* <td>E330</td> */}
               </tr>
               <tr>
@@ -506,6 +506,11 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="https://www.muleresophonic.com/">Mule Resophonic Guitars</Link></td>
                 <td>Resonator</td>
+                {/* <td>W-102</td> */}
+              </tr>
+              <tr>
+                <td><Link href="https://themusicemporium.com/">Music Emporium</Link></td>
+                <td>Store</td>
                 {/* <td>W-102</td> */}
               </tr>
               <tr>
