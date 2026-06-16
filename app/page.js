@@ -82,7 +82,7 @@ export default function Home() {
               alt="banner left"
               width={500}
               height={400}
-              className="px-8 sm:px-0"
+              className="px-8 sm:px-0 w-full"
             />
             <Image
               className="hidden sm:flex mx-2"
