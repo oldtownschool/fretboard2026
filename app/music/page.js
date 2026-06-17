@@ -185,9 +185,18 @@ export default function Music() {
           
           <h4 className="tracking-wide font-aurochs text-3xl mt-6">Thursday, August 21, 2025 </h4>
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Cesar Rosas & The Chi-Town Playboys
-          </h3>
+          
 
+          {/* <div className="block sm:flex sm:flex-row">
+            <div className="w-full sm:flex-col sm:flex sm:w-2/4">
+              
+            </div>
+            <div className="w-full sm:flex-col sm:flex sm:w-2/4">
+              
+            </div>
+          </div> */}
+          
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Cesar Rosas & The Chi-Town Playboys</h3>
           <Image
             src="/COMPwHUNTER-CesarRosas.jpg"
             alt="Cesar Rosas"
@@ -195,11 +204,12 @@ export default function Music() {
             width={600}
             height={400}
             style={{ maxHeight: '450px', maxWidth: '350px'}}
-          />
-
+            />  
           <p className="mt-4">
-          Cesar Rosas, founding member of the iconic band Los Lobos, plays a wide spectrum of music from traditional flavors to mind altering sounds.
+            Cesar Rosas, founding member of the iconic band Los Lobos, plays a wide spectrum of music from traditional flavors to mind altering sounds.
           </p>
+
+          
 
           {/* <div className="flex items-center divide-x-2 divide-gray-500 mt-6">
             <span className="pr-3 font-medium text-gray-900"><Link

@@ -167,10 +167,10 @@ export default function Home() {
             <p>
               <span className="font-bold">Experience</span> the midwest’s largest and finest gathering of makers, players, and industry experts. Demo and purchase new, forthcoming and Summit-exclusive gear from over 50 luthiers, pedal makers, amp, and gear companies. 
             </p>
-            <p className="mt-2">Early Bird 2026 All Access 3-Day Passes On Sale Now!</p>
+            <p className="mt-2">2026 3-Day Passes On Sale Now!</p>
             <a href="/luthiers">
               <button className="text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1] my-2">
-              See 2025 Exhibitors
+              2026 Exhibitors
               </button>
             </a>
           </div>
@@ -188,12 +188,12 @@ export default function Home() {
               meet the makers
             </h2>
             <p>
-              <span className="font-bold">Meet</span> the makers and learn from the masters! Workshops. Master Classes. Jams and more. Plus an incredible lineup of featured concerts! Past performers include Lyle Lovett, Jorma Kaukonen, Charlie Hunter, Bill Frisell, Blake Mills, Valerie June, Tommy Emmanuel, Jeff Parker plus special guests! New schedule announced in Spring 2026.
+              <span className="font-bold">Meet</span> the makers and learn from the masters! Workshops. Master Classes. Jams and more. Plus an incredible lineup of featured concerts! A true gathering of the greats, featured speakers and attendees include Chris Martin IV (Martin Guitars), Josh Scott (JHS), Bob Taylor (Taylor Guitars), Jason Verlinde (Fretboard Journal), Terry Foster, Sofia Wolfson and so many more.
 
             </p>
             <a href="/schedule">
               <button className="text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1] my-2">
-              See 2025 Schedule
+              2026 Schedule
               </button>
             </a>
           </div>
@@ -217,7 +217,7 @@ export default function Home() {
               <span className="font-bold">Robert Keeley</span> battle in a race
               to build the ultimate FUZZ PEDAL!
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="block sm:flex sm:flex-row max-w-5xl p-2 sm:p-0">
@@ -232,17 +232,16 @@ export default function Home() {
               />
             </div>
             <h2 className="tracking-wide font-aurochs font-normal uppercase text-3xl">
-              meet the makers
+              Featured Concerts
             </h2>
             <p>
-              <span className="font-bold">Meet</span> the builders of the
-              greatest stringed instruments on eart. Play their latest.
+              <span className="font-bold">Hear</span> amazing concerts & performances all summit long. Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Antoine Boyer, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers. Of course, there’s always surprise guests at Fretboard Summit
             </p>
           </div>
           <div className="w-full sm:flex-col sm:flex sm:w-2/4 m-0 mt-4  sm:m-2 p-4 bg-[#A4CCDA] text-center text-[#322D25]">
             <div className="flex justify-center">
               <Image
-                src="/Vintageamps.png"
+                src="/Rectangle15.png"
                 alt="banner left"
                 className="self-start mb-2"
                 width={600}
@@ -250,14 +249,13 @@ export default function Home() {
               />
             </div>
             <h2 className="tracking-wide font-aurochs font-normal uppercase text-3xl">
-              the truth about vintage amps lounge
+              Guitar Geeks Unite!
             </h2>
             <p>
-              <span className="font-bold">Plug in</span> to some of the classic,
-              rare, and cult favorite amps and PAs mentioned in our weekly
-              podcast.
+              <span className="font-bold">Happenings</span>  are all around Fretboard Summit. In addition to 100 boutique brands and independent luthiers, there’s demos of vintage guitars and amplifiers, hands-on workshops, science fairs, a wine tasting, a 5k run and even the return of the Summit Pinewood Derby
+
             </p>
-          </div> */}
+          </div>
         </div>
 
         <a href="/tickets">
