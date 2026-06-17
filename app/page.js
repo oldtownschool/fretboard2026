@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <div className="w-full mt-6 sm:mt-0 sm:flex sm:w-2/4">
             <Image
-              src="/FS2026_Homepage_RightStack_061426.png"
+              src="/FS2026_Homepage_RightStack_061726.png"
               alt="banner left"
               width={500}
               height={400}
