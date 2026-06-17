@@ -1,9 +1,42 @@
+'use client'
+
 import Image from "next/image";
 import { Navbar } from "../components/Navbar.jsx";
 import Link from "next/link";
 import { Footer } from "../components/Footer";
 
+import Script from "next/script.js";
+import React from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export default function Music() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    centerMode: true,
+    autoplay: true,          // Enables automatic sliding
+    autoplaySpeed: 2000,     // Delay between transitions (in ms)
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  };
   return (
     <>
       <Navbar />
@@ -28,6 +61,44 @@ export default function Music() {
           <p className="font-bold text-base mt-6 text-[#F0E5D1]">
           Full Concert Schedule & Bios coming soon!
           </p>
+
+          <a href="/tickets" className="text-center my-10">
+          <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
+            Buy Tickets
+          </button>
+        </a>
+
+        {/* before event happens show these slides, then comment out the week of the event */}
+        <Slider {...settings}>
+          <div>
+            <Image src="/FBS-Slide_1_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
+          </div>
+          <div>
+            <Image src="/FBS-Slide_2_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
+          </div>
+          <div>
+            <Image src="/FBS-Slide_3_061726.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
+          </div>
+          <div>
+            <Image src="/FBS-Slide_4_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
+          </div>
+          <div>
+            <Image src="/FBS-Slide_5_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
+          </div>
+          <div>
+            <Image src="/FBS-Slide_6_061726.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
+          </div>
+          <div>
+            <Image src="/FBS-Slide_7_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
+          </div>
+          <div>
+            <Image src="/FBS-Slide_8_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
+          </div>
+          <div>
+            <Image src="/FBS-Slide_9_061726.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
+          </div>
+        </Slider>
+        
         </div>
 
 
@@ -135,11 +206,7 @@ export default function Music() {
           </div>
         </div> */}
 
-        <a href="/tickets" className="text-center my-10">
-          <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
-            Buy Tickets
-          </button>
-        </a>
+        
 
         {/* <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#A4CCDA] text-[#322D25]">
           <div className="flex justify-center">

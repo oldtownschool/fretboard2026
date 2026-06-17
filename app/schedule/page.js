@@ -21,6 +21,8 @@ export default function Schedule() {
     slidesToScroll: 1,
     arrows: true,
     centerMode: true,
+    autoplay: true,          // Enables automatic sliding
+    autoplaySpeed: 2000,     // Delay between transitions (in ms)
     responsive: [{
       breakpoint: 768,
       settings: {
@@ -70,10 +72,39 @@ export default function Schedule() {
             
           </div>
 
-          
+          {/* before event happens show these slides, then comment out the week of the event */}
+          <Slider {...settings}>
+            <div>
+              <Image src="/FBS-Slide_1_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
+            </div>
+            <div>
+              <Image src="/FBS-Slide_2_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
+            </div>
+            <div>
+              <Image src="/FBS-Slide_3_061726.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
+            </div>
+            <div>
+              <Image src="/FBS-Slide_4_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
+            </div>
+            <div>
+              <Image src="/FBS-Slide_5_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
+            </div>
+            <div>
+              <Image src="/FBS-Slide_6_061726.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
+            </div>
+            <div>
+              <Image src="/FBS-Slide_7_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
+            </div>
+            <div>
+              <Image src="/FBS-Slide_8_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
+            </div>
+            <div>
+              <Image src="/FBS-Slide_9_061726.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
+            </div>
+          </Slider>
 
 
-          {/* commented out  7/22/2025 */}
+          {/* Keep commented out until the event schedule is released */}
           {/* <Slider {...settings}>
             <div>
               <Image src="/Fretboard2025_DailyScheduleSlides_Thurs1.jpg" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
