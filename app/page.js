@@ -224,7 +224,7 @@ export default function Home() {
           <div className="w-full sm:flex-col sm:flex sm:w-2/4 m-0 sm:m-2 mt-0 sm:mt-2 p-4 bg-[#F0E5D1] text-center text-[#322D25]">
             <div className="flex justify-center">
               <Image
-                src="/Rectangle15.png"
+                src="/FeatConcerts_2026_061726.png"
                 alt="banner left"
                 className="self-start mb-2"
                 width={600}
@@ -241,7 +241,7 @@ export default function Home() {
           <div className="w-full sm:flex-col sm:flex sm:w-2/4 m-0 mt-4  sm:m-2 p-4 bg-[#A4CCDA] text-center text-[#322D25]">
             <div className="flex justify-center">
               <Image
-                src="/Rectangle15.png"
+                src="/GuitarGeeks_2026_061726.png"
                 alt="banner left"
                 className="self-start mb-2"
                 width={600}
