@@ -19,14 +19,14 @@ export default function Music() {
           <h2 className="mt-10 font-aurochs text-[#F0E5D1] uppercase text-6xl tracking-wider text-center">
             Live Performances
           </h2>
-          <h4 className="mt-10 font-bold font-aurochs text-[#F0E5D1] uppercase text-3xl tracking-wider  text-center">
+          <h4 className="mt-10 font-bold font-aurochs text-[#F0E5D1] uppercase text-3xl tracking-wider">
             Great concerts in Old Town School’s legendary concert halls are a key component of Fretboard Summit!
           </h4>
           <p className="font-bold text-2xl mt-6 text-[#F0E5D1]">
-          Past performers include Lyle Lovett, Jorma Kaukonen, Charlie Hunter, Bill Frisell, Blake Mills, Valerie June, Tommy Emmanuel, Jeff Parker plus special guests! 
+          Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Antoine Boyer, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers (featuring Steve Dawson, Fats Kaplin, Richard Bennett, Andy Reiss, & Dave Jacques) Shane Parish and much more.
           </p>
-          <p className="font-bold text-2xl mt-6 text-[#F0E5D1]">
-          View last year’s info before the new concert lineup is announced in Spring 2026!
+          <p className="font-bold text-base mt-6 text-[#F0E5D1]">
+          Full Concert Schedule & Bios coming soon!
           </p>
         </div>
 
@@ -177,13 +177,13 @@ export default function Music() {
           </Link>
         </div>  */}
 
-        <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#F0E5D1] text-[#322D25]">
+        {/* <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#F0E5D1] text-[#322D25]">
           <h2 className="tracking-wider font-aurochs font-normal uppercase text-5xl text-center">
             Last Year&apos;s Performances
-          </h2>
+          </h2> */}
 
           
-          <h4 className="tracking-wide font-aurochs text-3xl mt-6">Thursday, August 21, 2025 </h4>
+          {/* <h4 className="tracking-wide font-aurochs text-3xl mt-6">Thursday, August 21, 2025 </h4> */}
 
           
 
@@ -196,7 +196,7 @@ export default function Music() {
             </div>
           </div> */}
           
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Cesar Rosas & The Chi-Town Playboys</h3>
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Cesar Rosas & The Chi-Town Playboys</h3>
           <Image
             src="/COMPwHUNTER-CesarRosas.jpg"
             alt="Cesar Rosas"
@@ -207,7 +207,7 @@ export default function Music() {
             />  
           <p className="mt-4">
             Cesar Rosas, founding member of the iconic band Los Lobos, plays a wide spectrum of music from traditional flavors to mind altering sounds.
-          </p>
+          </p> */}
 
           
 
@@ -220,7 +220,7 @@ export default function Music() {
 
 
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Charlie Hunter & Ella Feingold</h3>
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Charlie Hunter & Ella Feingold</h3>
 
           <Image
             src="/Ella_CH.png"
@@ -241,10 +241,10 @@ export default function Music() {
               width={350}
               height={5}
             />
-          </div>
+          </div> */}
 
 
-          <h4 className="tracking-wide font-aurochs text-3xl mt-6">Friday, August 22, 2025</h4>
+          {/* <h4 className="tracking-wide font-aurochs text-3xl mt-6">Friday, August 22, 2025</h4>
 
           <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Dave Hill
 
@@ -273,7 +273,7 @@ export default function Music() {
             height={400}
           />
 
-          <p className="mt-4">Jazz guitarist Jonathan Stout makes his return to the Fretboard Summit for an unforgettable set of music with collaborator Erik McIntyre.</p>
+          <p className="mt-4">Jazz guitarist Jonathan Stout makes his return to the Fretboard Summit for an unforgettable set of music with collaborator Erik McIntyre.</p> */}
 
           
           {/* <h3 className="tracking-wide font-aurochs text-3xl font-bold mt-6">Valerie June</h3>
@@ -299,7 +299,7 @@ export default function Music() {
           </div> */}
 
 
-          <div className="flex justify-center  my-12">
+          {/* <div className="flex justify-center  my-12">
             <Image
               className="hidden md:flex self-center"
               src="/borderRed2.png"
@@ -372,7 +372,7 @@ export default function Music() {
             height={400}
           />
 
-          <p className="mt-4">Anna Vogelzang believes in the power of songs. Since 2004, the Chicago-based multi-instrumentalist has independently released 7 award-winning albums and toured extensively throughout the US, opening for a wide range of acts from Gillian Welch to Sara Bareilles. Atwood Magazine says her songwriting is &quot;beautifully visceral&quot;, exuding  &quot;the kind of storytelling ability passed down through decades of folk tradition - it walks the line between the modern and the nostalgic&quot;. Her voice has been described as &quot;an ethereal, lucid thing&quot; that &quot;nets melodies like it&apos;s catching monarchs&quot;.</p>
+          <p className="mt-4">Anna Vogelzang believes in the power of songs. Since 2004, the Chicago-based multi-instrumentalist has independently released 7 award-winning albums and toured extensively throughout the US, opening for a wide range of acts from Gillian Welch to Sara Bareilles. Atwood Magazine says her songwriting is &quot;beautifully visceral&quot;, exuding  &quot;the kind of storytelling ability passed down through decades of folk tradition - it walks the line between the modern and the nostalgic&quot;. Her voice has been described as &quot;an ethereal, lucid thing&quot; that &quot;nets melodies like it&apos;s catching monarchs&quot;.</p> */}
 
 {/* 
           <h3 className="tracking-wide font-aurochs text-3xl font-bold mt-6 ">Blake Mills</h3>
@@ -420,7 +420,7 @@ export default function Music() {
           </div> */}
 
 
-        </div>
+        {/* </div> */}
 
         {/* <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#A4CCDA] text-[#322D25]">
           <h2 className="tracking-wider font-aurochs font-normal uppercase text-5xl text-center">

@@ -174,7 +174,7 @@ export default function Home() {
               </button>
             </a>
           </div>
-          <div className="w-full sm:flex-col sm:flex sm:w-2/4 m-0 sm:m-2 mt-0 sm:mt-2 p-4 bg-[#F0E5D1] text-center text-[#322D25]">
+          <div className="w-full sm:flex-col sm:flex sm:w-2/4 m-0 sm:m-2 mt-4 sm:mt-2 p-4 bg-[#F0E5D1] text-center text-[#322D25]">
             <div className="flex justify-center">
               <Image
                 src="/Rectangle15.png"
