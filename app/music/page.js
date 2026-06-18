@@ -86,7 +86,7 @@ export default function Music() {
             <Image src="/FBS-Slide_5_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
           </div>
           <div>
-            <Image src="/FBS-Slide_6_061726.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
+            <Image src="/FBS-Slide_6_061726-B.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
           </div>
           <div>
             <Image src="/FBS-Slide_7_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
