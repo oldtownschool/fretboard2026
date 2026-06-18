@@ -373,11 +373,11 @@ export default function Luthiers() {
                 <td>Acoustics</td>
                 {/* <td>E126</td> */}
               </tr>
-              <tr>
+              {/* <tr>
                 <td><Link href="http://www.iuliusguitars.com/">Iulius Guitars</Link></td>
                 <td>Acoustics</td>
-                {/* <td>W-Harris Gallery</td> */}
-              </tr>
+                <td>W-Harris Gallery</td>
+              </tr> */}
               <tr>
                 <td><Link href="http://www.japarts.ca/">Japarts Japanese Guitar Parts</Link></td>
                 <td>Parts</td>

@@ -78,7 +78,7 @@ export default function Schedule() {
               <Image src="/FBS-Slide_1_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
             </div>
             <div>
-              <Image src="/FBS-Slide_2_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
+              <Image src="/FBS-Slide_2_061726-B.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
             </div>
             <div>
               <Image src="/FBS-Slide_3_061726.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />

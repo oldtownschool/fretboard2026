@@ -300,7 +300,16 @@ export const Footer = () => {
             <Image
               className="mix-blend-multiply image-sm"
               src="/Boveda_FretboardSponsor.png"
-              alt="D'Addario"
+              alt="Boveda"
+              width={60}
+              height={150}
+            />
+          </a>
+          <a className="flex mx-1 sm:mx-2 sm:ml-12 self-center image-sm" href="https://www.woodandwiremusic.com/" >
+            <Image
+              className="mix-blend-multiply image-sm"
+              src="/woodwire.png"
+              alt="Wood & Wire"
               width={60}
               height={150}
             />
