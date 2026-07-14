@@ -86,9 +86,9 @@ export default function Schedule() {
             <div>
               <Image src="/FBS-Slide_4_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
             </div>
-            <div>
+            {/* <div>
               <Image src="/FBS-Slide_5_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
-            </div>
+            </div> */}
             <div>
               <Image src="/FBS-Slide_6_061726-B.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
             </div>
@@ -254,7 +254,7 @@ export default function Schedule() {
 
           <h3 className="font-aurochs mt-4 uppercase text-xl sm:text-2xl tracking-wider leading-relaxed underline" >Performances</h3>
           <p className="mb-4 leading-relaxed" >
-            Antoine Boyer <br/>
+            {/* Antoine Boyer <br/> */}
             Shane Parish<br/>
             Jonathan Stout <br/>
             Gabe Noel

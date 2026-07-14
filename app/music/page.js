@@ -56,7 +56,7 @@ export default function Music() {
             Great concerts in Old Town School’s legendary concert halls are a key component of Fretboard Summit!
           </h4>
           <p className="font-bold text-2xl mt-6 text-[#F0E5D1]">
-          Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Antoine Boyer, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers (featuring Steve Dawson, Fats Kaplin, Richard Bennett, Andy Reiss, & Dave Jacques) Shane Parish and much more.
+          Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers (featuring Steve Dawson, Fats Kaplin, Richard Bennett, Andy Reiss, & Dave Jacques) Shane Parish and much more.
           </p>
           <p className="font-bold text-base mt-6 text-[#F0E5D1]">
           Full Concert Schedule & Bios coming soon!
@@ -82,9 +82,9 @@ export default function Music() {
           <div>
             <Image src="/FBS-Slide_4_061726.webp" width={600} height={600} alt="Line Up Schedule Thurs 1"/>
           </div>
-          <div>
+          {/* <div>
             <Image src="/FBS-Slide_5_061726.webp" width={600} height={600} alt="Line Up Schedule Fri 1" />
-          </div>
+          </div> */}
           <div>
             <Image src="/FBS-Slide_6_061726-B.webp" width={600} height={600} alt="Line Up Schedule Sat 1" />
           </div>

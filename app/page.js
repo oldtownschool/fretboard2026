@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <div className="w-full mt-6 sm:mt-0 sm:flex sm:w-2/4">
             <Image
-              src="/FS2026_Homepage_RightStack_061726.png"
+              src="/FS2026_Homepage_RightStack_071426.png"
               alt="banner left"
               width={500}
               height={400}
@@ -235,7 +235,7 @@ export default function Home() {
               Featured Concerts
             </h2>
             <p>
-              <span className="font-bold">Hear</span> amazing concerts & performances all summit long. Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Antoine Boyer, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers. Of course, there’s always surprise guests at Fretboard Summit
+              <span className="font-bold">Hear</span> amazing concerts & performances all summit long. Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers. Of course, there’s always surprise guests at Fretboard Summit
             </p>
           </div>
           <div className="w-full sm:flex-col sm:flex sm:w-2/4 m-0 mt-4  sm:m-2 p-4 bg-[#A4CCDA] text-center text-[#322D25]">
