@@ -139,7 +139,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex justify-center pt-4 px-2 image-container">
-          <a className="flex sm:mx-2 self-center image-sm" href="https://bourgeoisguitars.com/" >
+          <a className="flex mx-1 sm:mx-2 self-center image-sm" href="https://bourgeoisguitars.com/" >
             <Image
               className="mix-blend-multiply image-sm"
               src="/image10.png"
@@ -148,7 +148,7 @@ export const Footer = () => {
               height={150}
             />
           </a>
-          <a className="flex sm:mx-2 sm:ml-8 self-center image-sm" href="https://boucherguitars.com/" >
+          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://boucherguitars.com/" >
             <Image
               className="mix-blend-multiply image-sm"
               src="/boucher_logo.png"
@@ -157,7 +157,7 @@ export const Footer = () => {
               height={150}
             />
           </a>
-          <a className="flex sm:mx-2 sm:ml-8 self-center image-sm" href="https://www.northfieldinstruments.com/" >
+          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://www.northfieldinstruments.com/" >
             <Image
               className="image-sm"
               src="/NorthfieldMandolins_web.png"
