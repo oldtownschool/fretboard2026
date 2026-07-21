@@ -412,7 +412,7 @@ export default function Schedule() {
           <p className="font-bold mt-4 leading-relaxed" >8pm The Summit Summit </p>
           <p className="text-lg leading-relaxed" >A night of instrumental guitar wizards. Hear Twanguero, Shane Parish, Jonathan Stout, Gabe Noel & surprise guests. Available only to passholders.</p>
 
-          <p className="font-bold mt-4 leading-relaxed" >All Weekend Long: The Truth About Vintage Amps Room (E130)</p>
+          <p className="font-bold mt-4 leading-relaxed" >All Weekend Long: The Truth About Vintage Amps Room</p>
           <p className="text-lg leading-relaxed" >Brian McAlister (vintagetubeamplifiers.com) and the community behind Skip Simmons’ Truth About Vintage Amps podcast share some of their favorite tube amp finds for anyone to try out. Come see what the tube fuss is about or just play a guitar you’ve been admiring at full volume. (B-1, West Building, all weekend long)</p>
 
 
