@@ -95,14 +95,14 @@ export default function Tickets() {
           <div className="block sm:flex sm:flex-row  max-w-5xl sm:p-0">
             <div className="flex justify-evenly w-full sm:flex-col sm:flex sm:w-2/4 sm:p-4 px-4">
               
-              <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1] cursor-not-allowed">
+              {/* <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1] cursor-not-allowed">
               Available Summer 2026<br/>Fri August 21
-              </button>
-              {/* <Link href="http://ots.fm/FBS25Fri" className="text-center">
+              </button> */}
+              <Link href="https://www.oldtownschool.org/concerts/2026/08-20-2026-fretboard-summit-2026/" className="text-center">
                 <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1] ">
-                  Buy Day Pass: Fri, Aug 22
+                  Buy Day Pass: Fri, Aug 21
                 </button>
-              </Link> */}
+              </Link>
               {/* <ul className="list-disc ml-4 mt-6">
                 <li>Friday Highlights Include:</li>
                 <li className="ml-4">JHS Live: the Germanium Chef competition featuring Robert Keeley versus Heather Brown</li>
@@ -115,14 +115,14 @@ export default function Tickets() {
               </ul> */}
             </div>
             <div className="flex justify-evenly w-full sm:flex-col sm:flex sm:w-2/4 m-0 sm:p-4 px-4 mt-2 sm:mt-0">
-                <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1] cursor-not-allowed">
+                {/* <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1] cursor-not-allowed">
                 Available Summer 2026<br/>Sat August 22
-                </button>
-              {/* <Link href="https://ots.fm/FBS25Sat" className="text-center">
+                </button> */}
+              <Link href="https://www.oldtownschool.org/concerts/2026/08-20-2026-fretboard-summit-2026/" className="text-center">
                 <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
-                Buy Day Pass: Sat, Aug 23
+                Buy Day Pass: Sat, Aug 22
                 </button>
-              </Link> */}
+              </Link>
               {/* <ul className="list-disc ml-4 mt-6">
                 <li>Saturday Highlights Include:</li>
                 <li className="ml-4">Tommy Emmanuel</li>
