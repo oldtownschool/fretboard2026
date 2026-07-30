@@ -2,11 +2,32 @@ import Image from "next/image";
 import { Navbar } from "../components/Navbar.jsx";
 import Link from "next/link";
 import { Footer } from "../components/Footer";
+import Script from "next/script.js";
+
 
 export default function Luthiers() {
   return (
     <>
       <Navbar />
+      <Script type="text/javascript">
+        {` 
+        document.getElementById('tableSearch').addEventListener('input', function () {
+          const filterValue = this.value.toLowerCase();
+        
+          const rows = document.querySelectorAll('#dataTable tbody tr');
+
+          rows.forEach(row => {
+            const rowText = row.textContent.toLowerCase();
+            
+            if (rowText.includes(filterValue)) {
+              row.style.display = ''; 
+            } else {
+              row.style.display = 'none';
+            }
+          });
+        });
+        `}
+      </Script>
       <main className="flex min-h-screen flex-col items-center bg-gradient-to-r from-[#322D35] to-[#4C454F]">
         
         {/* <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#F0E5D1] text-[#322D25]">
@@ -52,7 +73,9 @@ export default function Luthiers() {
           <p className="italic text-sm leading-relaxed">* asterisk indicates sponsor</p>
 
 
-          <table className="table-auto">
+          <input className="my-4 p-2" type="text" id="tableSearch" placeholder="Type to search Exhibitors..."></input>
+
+          <table className="table-auto" id="dataTable">
             <thead>
               <tr>
                 <th className="text-left">Exhibitor</th>
