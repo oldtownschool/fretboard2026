@@ -331,6 +331,11 @@ export default function Luthiers() {
                 {/* <td>W-211</td> */}
               </tr>
               <tr>
+                <td><Link href="https://www.gearcheck.com/">Gearcheck</Link></td>
+                <td>Instrument Management</td>
+                {/* <td>W-211</td> */}
+              </tr>
+              <tr>
                 <td><Link href="https://www.gillanderguitars.com/">Gillander Guitars</Link></td>
                 <td>Acoustics</td>
                 {/* <td>W-211</td> */}
@@ -458,7 +463,7 @@ export default function Luthiers() {
               </tr>
               <tr>
                 <td><Link href="https://www.lhtguitars.com/guitars">LHT Guitars</Link></td>
-                <td>Semi Hollow and Hollow body</td>
+                <td>Archtop Guitars</td>
                 {/* <td>E328</td> */}
               </tr>
               <tr>
@@ -546,7 +551,11 @@ export default function Luthiers() {
                 <td>Mandolins</td>
                 {/* <td>W-212</td> */}
               </tr>
-              
+              <tr>
+                <td><Link href="https://oldbloodnoise.com/">Old Blood Noise</Link></td>
+                <td>Pedals</td>
+                {/* <td>W 1st Floor</td> */}
+              </tr>
               <tr>
                 <td><Link href="https://musicstore.oldtownschool.org">Old Town School Music Store</Link></td>
                 <td>Gear, Strings & Accessories</td>

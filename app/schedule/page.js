@@ -190,8 +190,8 @@ export default function Schedule() {
           <h3 className="font-aurochs mt-4 uppercase text-xl sm:text-2xl tracking-wider leading-relaxed underline" >Workshops & Speakers</h3>
           <p className="font-bold mt-4 leading-relaxed" >1pm From K&F to CBS: The Real Relics of Fender History</p>
           <p className="text-lg leading-relaxed" >Acclaimed guitar historian Terry Foster shows rare and unseen items from his collection that helped shape the future of electric guitar. Presentation followed by Q&A. (Maurer Hall - West)</p>
-          <p className="font-bold mt-4 leading-relaxed" >1pm Ordering a Luthier-Built Acoustic</p>
-          <p className="text-lg leading-relaxed" >Guitarmaker Tom Sands and musician/educator Tony Polecastro walk attendees through best practices for commissioning a custom instrument. A must-listen whether you’re buying a guitar at the Summit or elsewhere. (Szold Hall - East)</p>
+          {/* <p className="font-bold mt-4 leading-relaxed" >1pm Ordering a Luthier-Built Acoustic</p>
+          <p className="text-lg leading-relaxed" >Guitarmaker Tom Sands and musician/educator Tony Polecastro walk attendees through best practices for commissioning a custom instrument. A must-listen whether you’re buying a guitar at the Summit or elsewhere. (Szold Hall - East)</p> */}
           <p className="font-bold mt-4 leading-relaxed" >2pm Fats Kaplin</p>
           <p className="text-lg leading-relaxed" >Acclaimed Nashville musician Fats Kaplin will discuss the instruments, techniques, and musical traditions he has spent a lifetime studying and using on stage and in the studio with artists ranging from John Prine and Mitski to Jack White and the Dead Reckoners. A singular multi-instrumentalist on fiddle, banjo, guitar, ukulele, mandolin, steel guitar and more, Fats has followed an intriguing path through music: years on the road with Roy Book Binder, a long stretch touring the world with Tom Russell, and eventually landing in Nashville, where he has become one of the city’s most respected and in-demand players.</p>
 
