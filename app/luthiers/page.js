@@ -244,7 +244,7 @@ export default function Luthiers() {
               </tr>
               <tr>
                 <td><Link href="https://www.chicagoluthiers.com/">Chicago Luthiers Workshop</Link></td>
-                <td>Pedal Builder</td>
+                <td>Building, Repairs, Classses</td>
                 {/* <td>E326</td> */}
               </tr>
               {/* <tr>
