@@ -69,7 +69,7 @@ export default function Luthiers() {
 
 
           <h3 className="font-bold text-lg leading-relaxed mt-8">2026 Exhibitor List</h3>
-          <p className="italic text-sm leading-relaxed">Updated: June 17, 2026</p>
+          <p className="italic text-sm leading-relaxed">Updated: July 31, 2026</p>
           <p className="italic text-sm leading-relaxed">* asterisk indicates sponsor</p>
 
 
@@ -239,6 +239,11 @@ export default function Luthiers() {
               </tr>
               <tr>
                 <td><Link href="http://chasebliss.com">Chase Bliss</Link></td>
+                <td>Pedal Builder</td>
+                {/* <td>E326</td> */}
+              </tr>
+              <tr>
+                <td><Link href="https://www.chicagoluthiers.com/">Chicago Luthiers Workshop</Link></td>
                 <td>Pedal Builder</td>
                 {/* <td>E326</td> */}
               </tr>
@@ -481,11 +486,10 @@ export default function Luthiers() {
                 <td>Acoustic</td>
                 {/* <td>E326</td> */}
               </tr>
-              <tr>
+              {/* <tr>
                 <td><Link href="https://www.lyonhealycorporation.com/brands/">Lyon and Healy</Link></td>
                 <td>Acoustics</td>
-                {/* <td>E126</td> */}
-              </tr>
+              </tr> */}
               <tr>
                 <td><Link href="https://www.machmachinesmusic.com/">Mach Machines</Link></td>
                 <td>Various</td>

@@ -155,7 +155,7 @@ export default function Schedule() {
         <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#A4CCDA] text-[#322D25]">
 
 
-          <p className="italic text-sm leading-relaxed">Updated: July 21, 2026</p>
+          <p className="italic text-sm leading-relaxed">Updated: July 31, 2026</p>
           <p className="font-bold text-sm leading-relaxed">Fretboard Summit 2026: Full Schedule</p>
           {/* <p className="text-xs leading-relaxed">Complete schedule coming soon</p> */}
 
