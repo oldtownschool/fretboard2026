@@ -675,11 +675,10 @@ export default function Luthiers() {
                 <td>Acoustics</td>
                 {/* <td>E324</td> */}
               </tr>
-              <tr>
+              {/* <tr>
                 <td><Link href="http://www.stewmac.com/">Stew Mac</Link></td>
                 <td>Luthier Supplies</td>
-                {/* <td>E324</td> */}
-              </tr>
+              </tr> */}
               <tr>
                 <td><Link href="https://www.summerschoolelectronics.com/">Summer School Electronics</Link></td>
                 <td>Pedal Builder</td>
