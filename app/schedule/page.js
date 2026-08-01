@@ -318,7 +318,9 @@ export default function Schedule() {
 
 
           <p className="font-bold mt-4 leading-relaxed underline" >Szold Hall </p>
-          <p className="text-lg leading-relaxed" >8pm Michael Daves & Jacob Jolliff  </p>
+          <p className="text-lg leading-relaxed" >8pm <br/>
+            Special Guest<br/>
+            Michael Daves & Jacob Jolliff  </p>
 
 
 
@@ -413,7 +415,10 @@ export default function Schedule() {
           <p className="text-lg leading-relaxed" >A night of instrumental guitar wizards. Hear Twanguero, Shane Parish, Jonathan Stout, Gabe Noel & surprise guests. Available only to passholders.</p>
 
           <p className="font-bold mt-4 leading-relaxed" >All Weekend Long: The Truth About Vintage Amps Room</p>
-          <p className="text-lg leading-relaxed" >Brian McAlister (vintagetubeamplifiers.com) and the community behind Skip Simmons’ Truth About Vintage Amps podcast share some of their favorite tube amp finds for anyone to try out. Come see what the tube fuss is about or just play a guitar you’ve been admiring at full volume. (B-1, West Building, all weekend long)</p>
+          <p className="text-lg leading-relaxed" >Brian McAlister (vintagetubeamplifiers.com) and the community behind Skip Simmons’ Truth About Vintage Amps podcast share some of their favorite tube amp finds for anyone to try out. Come see what the tube fuss is about or just play a guitar you’ve been admiring at full volume. (E128, East Building, all weekend long)</p>
+
+          <p className="font-bold mt-4 leading-relaxed" >All Weekend Long: Vintage Martin & Gibson ID with Greig Hutton</p>
+          <p className="text-lg leading-relaxed" >Acclaimed Martin historian Greig Hutton will be back with his database of early Martin and Gibson guitar records, helping you learn the history of your instrument. Just bring a serial number or factory order number! (Lobby, West Building)</p>
 
 
 
