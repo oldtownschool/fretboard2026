@@ -189,7 +189,7 @@ export default function Luthiers() {
               </tr>
               <tr>
                 <td><Link href="https://bruceguitars.com/">Bruce Guitars</Link></td>
-                <td>Acoustics</td>
+                <td>Acoustics, Electric</td>
                 <td>E326</td>
               </tr>
               <tr>
