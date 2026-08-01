@@ -190,7 +190,7 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="https://bruceguitars.com/">Bruce Guitars</Link></td>
                 <td>Acoustics</td>
-                <td>E328</td>
+                <td>E326</td>
               </tr>
               <tr>
                 <td><Link href="http://capozzoliguitarcompany.com/">Capozzoli Guitars</Link></td>
@@ -286,7 +286,7 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="https://dammanninstruments.com/">Dammann Instruments</Link></td>
                 <td>Mandolins</td>
-                <td>E326</td>
+                <td>E328</td>
               </tr>
               <tr>
                 <td><Link href="https://www.deeringbanjos.com/">Deering Banjo Company</Link></td>
@@ -548,7 +548,7 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="http://www.nationalguitars.com/">National Guitars</Link></td>
                 <td>Resonator Guitars</td>
-                <td>E326</td>
+                <td>E328</td>
               </tr>
               <tr>
                 <td><Link href="https://www.northwoodsluthiers.com">North Woods Luthiers</Link></td>
@@ -561,7 +561,7 @@ export default function Luthiers() {
                 <td>212</td>
               </tr>
               <tr>
-                <td><Link href="https://oldbloodnoise.com/">Old Blood Noise</Link></td>
+                <td><Link href="https://oldbloodnoise.com/">Old Blood Noise Endeavors</Link></td>
                 <td>Pedals</td>
                 <td>E126</td>
               </tr>
@@ -687,7 +687,7 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="https://www.summerschoolelectronics.com/">Summer School Electronics</Link></td>
                 <td>Pedal Builder</td>
-                <td>E326</td>
+                <td>E126</td>
               </tr>
               <tr>
                 <td><Link href="http://www.hobos-g.com/">Takeo Oka/Hobo&apos;s Guitar Works</Link></td>
@@ -747,7 +747,7 @@ export default function Luthiers() {
               <tr>
                 <td className="font-bold"><Link href="https://www.fretboardjournal.com/podcasts/the-truth-about-vintage-amps-big-index-page/">Truth About Vintage Amps*</Link></td>
                 <td>Amplifiers</td>
-                <td>E128</td>
+                <td>E130</td>
               </tr>
               <tr>
                 <td className="font-bold"><Link href="https://www.two-rock.com/">Two-Rock Amplifiers*</Link></td>
