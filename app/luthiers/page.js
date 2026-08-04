@@ -12,13 +12,11 @@ export default function Luthiers() {
       <Script type="text/javascript">
         {` 
         document.getElementById('tableSearch').addEventListener('input', function () {
-          const filterValue = this.value.toLowerCase();
-        
+          const filterValue = this.value.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
           const rows = document.querySelectorAll('#dataTable tbody tr');
 
           rows.forEach(row => {
-            const rowText = row.textContent.toLowerCase();
-            
+            const rowText = row.textContent.toLowerCase().replace(/[^a-z0-9]/g, '');
             if (rowText.includes(filterValue)) {
               row.style.display = ''; 
             } else {

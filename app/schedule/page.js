@@ -50,14 +50,14 @@ export default function Schedule() {
       <Script type="text/javascript">
         {` 
         document.getElementById('tableSearch').addEventListener('input', function () {
-          const filterValue = this.value.toLowerCase();
+        
+          const filterValue = this.value.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
         
           const rows = document.querySelectorAll('#dataTable div');
 
           rows.forEach(row => {
             if(!row.classList.contains('bg-gray-200')){
-              const rowText = row.textContent.toLowerCase();
-              
+              const rowText = row.textContent.toLowerCase().replace(/[^a-z0-9]/g, '');
               if (rowText.includes(filterValue)) {
                 row.classList.add('bg-yellow-50');
                 row.style.display = ''; 
