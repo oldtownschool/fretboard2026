@@ -205,7 +205,7 @@ export default function Schedule() {
           <input className="w-full my-4 p-2 text-gray-900" type="search" id="tableSearch" placeholder="Type to search Schedule..."></input>
 
           <div id="dataTable">
-            <p className="italic text-sm leading-relaxed">Updated: July 31, 2026</p>
+            <p className="italic text-sm leading-relaxed">Updated: August 4, 2026</p>
             <p className="font-bold text-sm leading-relaxed">Fretboard Summit 2026: Full Schedule</p>
 
 
