@@ -181,7 +181,7 @@ export default function Schedule() {
         <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#A4CCDA] text-[#322D25]">
 
 
-          <input className="my-4 p-2 text-gray-900" type="text" id="tableSearch" placeholder="Type to search Schedule..."></input>
+          <input className="w-full my-4 p-2 text-gray-900" type="text" id="tableSearch" placeholder="Type to search Schedule..."></input>
 
           <div id="dataTable">
             <p className="italic text-sm leading-relaxed">Updated: July 31, 2026</p>
@@ -524,10 +524,12 @@ export default function Schedule() {
             <div>
               <p className="font-bold mt-4 leading-relaxed underline" >Maurer Hall</p>
               <p className="font-bold leading-relaxed" >8pm The Summit Summit </p>
-              <p className="text-lg leading-relaxed" >A night of instrumental guitar wizards. Hear Twanguero, Shane Parish, Jonathan Stout, Gabe Noel & surprise guests. Available only to passholders.</p>
+              <p className="text-lg leading-relaxed mb-10" >A night of instrumental guitar wizards. Hear Twanguero, Shane Parish, Jonathan Stout, Gabe Noel & surprise guests. Available only to passholders.</p>
             </div>
             
-            <h3 className="font-aurochs mt-10 uppercase text-xl sm:text-2xl tracking-wider leading-relaxed underline" >All Weekend Long</h3>
+            <div className="bg-gray-200 h-2 w-full mt-6"></div>
+            {/* <h3 className="font-aurochs mt-10 uppercase text-xl sm:text-2xl tracking-wider leading-relaxed underline" >All Weekend Long</h3> */}
+            <h3 className="font-aurochs mt-10 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >All Weekend Long</h3>
 
             <div>
               <p className="font-bold mt-4 leading-relaxed" >The Truth About Vintage Amps Room</p>
