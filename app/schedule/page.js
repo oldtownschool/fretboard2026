@@ -78,12 +78,16 @@ export default function Schedule() {
               }
             });
             // Show or hide the parent header and section based on matches
-            if (hasMatch || term === '') {
+            if (hasMatch || filterValue === '') {
+              if (header){
               header.style.display = '';
-              section.style.display = '';
+              }
+              event.style.display = '';
             } else {
-              header.style.display = 'none';
-              section.style.display = 'none';
+              if (header){
+                header.style.display = 'none';
+              }
+              event.style.display = 'none';
             }
           });
         });
@@ -206,13 +210,16 @@ export default function Schedule() {
 
 
             <h3 className="font-aurochs mt-2 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Thursday, August 20</h3>
-            <div>
-              <p className="italic my-2  text-base" >(3-Day Passholders Only) 
-              Check-in begins at 10am. </p>
-            </div>
-            
-            <div>
-              <p className="italic text-base" >New for 2026: All-Access passholders are entered to win a new Iris Guitar, a handmade tube amp and other amazing raffle prizes, in addition to sponsored giveaways, a stellar swag bag, the Summit happy hour, workshops, concerts and other perks.</p>
+
+            <div className="event">
+              <div>
+                <p className="italic my-2  text-base" >(3-Day Passholders Only) 
+                Check-in begins at 10am. </p>
+              </div>
+              
+              <div>
+                <p className="italic text-base" >New for 2026: All-Access passholders are entered to win a new Iris Guitar, a handmade tube amp and other amazing raffle prizes, in addition to sponsored giveaways, a stellar swag bag, the Summit happy hour, workshops, concerts and other perks.</p>
+              </div>
             </div>
             
             <div className="event">
