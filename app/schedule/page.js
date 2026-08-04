@@ -189,12 +189,20 @@ export default function Schedule() {
 
 
             <h3 className="font-aurochs mt-2 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Thursday, August 20</h3>
-            <p className="italic my-2  text-base" >(3-Day Passholders Only) 
-            Check-in begins at 10am. </p>
-            <p className="italic text-base" >New for 2026: All-Access passholders are entered to win a new Iris Guitar, a handmade tube amp and other amazing raffle prizes, in addition to sponsored giveaways, a stellar swag bag, the Summit happy hour, workshops, concerts and other perks.</p>
+            <div>
+              <p className="italic my-2  text-base" >(3-Day Passholders Only) 
+              Check-in begins at 10am. </p>
+            </div>
+            
+            <div>
+              <p className="italic text-base" >New for 2026: All-Access passholders are entered to win a new Iris Guitar, a handmade tube amp and other amazing raffle prizes, in addition to sponsored giveaways, a stellar swag bag, the Summit happy hour, workshops, concerts and other perks.</p>
+            </div>
+            
 
             <h3 className="font-aurochs mt-4 uppercase text-xl sm:text-2xl tracking-wider leading-relaxed underline" >Fretboard Summit Activities</h3>
-            <p className="italic text-base" >Note: Summit workshops, clinics, interviews and concerts are available to All-Access Passholders only. Just want to guitar shop? We’ll have day Exhibitor Showcase tickets at the door for Friday and Saturday. </p>
+            <div>
+              <p className="italic text-base" >Note: Summit workshops, clinics, interviews and concerts are available to All-Access Passholders only. Just want to guitar shop? We’ll have day Exhibitor Showcase tickets at the door for Friday and Saturday. </p>
+            </div>
 
             <div>
               <p className="font-bold mt-4 leading-relaxed" >10am - 12pm Registration / Check-In (4544 N Lincoln Ave, Chicago, IL 60625)</p>
@@ -315,8 +323,10 @@ export default function Schedule() {
             <div className="bg-gray-200 h-2 w-full mt-6"></div>
 
             <h3 className="font-aurochs mt-10 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Friday, August 21</h3>
-
-            <p className="italic my-2  text-base" >Check-in begins at 9:30am. </p>
+            
+            <div>
+              <p className="italic my-2  text-base" >Check-in begins at 9:30am. </p>
+            </div>
 
             <div>
               <p className="font-bold mt-4 leading-relaxed" >10am - 5pm Luthier & Exhibitor Showcase</p>
