@@ -200,11 +200,11 @@ export default function Luthiers() {
                 <td>Electrics</td>
                 <td>E330</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td><Link href="https://carolineguitar.com/">Caroline Guitars</Link></td>
                 <td>Pedals</td>
                 <td>E128</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td><Link href="https://www.cartoucheguitars.com/">Cartouche Guitars</Link></td>
                 <td>Electrics</td>
@@ -653,11 +653,11 @@ export default function Luthiers() {
                 <td>Electrics</td>
                 <td>E126</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td><Link href="https://shockthefox.com">Shock the Fox</Link></td>
                 <td>Electrics</td>
                 <td>E128</td>
-              </tr>
+              </tr> */}
               {/* <tr>
                 <td><Link href="https://www.shure.com/en-US">Shure</Link></td>
                 <td>Microphones</td>
