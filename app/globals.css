@@ -44,7 +44,7 @@ body {
     width: 100% !important;
     position: relative !important;
     height: unset !important;
-    max-width: 170px;
+    max-width: 120px;
   }
   .image-sm {
     object-fit: contain;

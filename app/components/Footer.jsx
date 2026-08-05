@@ -79,27 +79,27 @@ export const Footer = () => {
         </div>
 
         <div className="flex justify-center pt-4 image-container">
-          <a className="flex mx-2 self-center image-md" href="https://www.henriksenamplifiers.com/" >
+          <a className="flex mx-2 self-center image" href="https://www.henriksenamplifiers.com/" >
             <Image
-              className="mix-blend-multiply image-md"
+              className="mix-blend-multiply image"
               src="/image5.png"
               alt="Henriksen"
               width={120}
               height={150}
             />
           </a>
-          <a className="flex mx-2 sm:ml-12 self-center image-md" href="https://www.martinguitar.com/" >
+          <a className="flex mx-2 sm:ml-12 self-center image" href="https://www.martinguitar.com/" >
             <Image
-              className="mix-blend-multiply image-md"
+              className="mix-blend-multiply image"
               src="/image6.png"
               alt="Martin&amp;Co"
               width={120}
               height={150}
             />
           </a>
-          <a className="flex mx-2 sm:ml-12 self-center image-md" href="https://santacruzguitar.com/" >
+          <a className="flex mx-2 sm:ml-12 self-center image" href="https://santacruzguitar.com/" >
             <Image
-              className="mix-blend-multiply image-md"
+              className="mix-blend-multiply image"
               src="/image7.png"
               alt="Santa Cruz"
               width={120}
@@ -139,43 +139,56 @@ export const Footer = () => {
         </div>
 
         <div className="flex justify-center pt-4 px-2 image-container">
-          <a className="flex mx-1 sm:mx-2 self-center image-sm" href="https://bourgeoisguitars.com/" >
+          <a className="flex mx-1 sm:mx-2 self-center image-md" href="https://bourgeoisguitars.com/" >
             <Image
-              className="mix-blend-multiply image-sm"
+              className="mix-blend-multiply image-md"
               src="/image10.png"
               alt="Bourgeois"
-              width={75}
+              width={100}
               height={150}
             />
           </a>
-          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://boucherguitars.com/" >
+          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-md" href="https://boucherguitars.com/" >
             <Image
-              className="mix-blend-multiply image-sm"
+              className="mix-blend-multiply image-md"
               src="/boucher_logo.png"
               alt="Boucher Guitars"
-              width={75}
+              width={100}
               height={150}
             />
           </a>
-          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://www.northfieldinstruments.com/" >
+          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-md" href="https://www.northfieldinstruments.com/" >
             <Image
-              className="image-sm"
+              className="image-md"
               src="/NorthfieldMandolins_web.png"
               alt="Northfield Mandolins"
-              width={75}
+              width={100}
               height={150}
             />
           </a>
-          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://www.irisguitarcompany.com/" >
+          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-md" href="https://www.irisguitarcompany.com/" >
             <Image
-              className="mix-blend-multiply image-sm"
+              className="mix-blend-multiply image-md"
               src="/IrisGuitars-web.png"
               alt="Iris Guitars"
+              width={100}
+              height={150}
+            />
+          </a>
+          {/* <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://beardguitars.com/" >
+            <Image
+              className="mix-blend-multiply image-sm"
+              src="/beard-guitar-logo.png"
+              alt="Beard Guitars"
               width={60}
               height={150}
             />
-          </a>
-          <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://beardguitars.com/" >
+          </a> */}
+          
+        </div>
+
+        <div className="flex justify-center pt-4 px-2 image-container">
+           <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://beardguitars.com/" >
             <Image
               className="mix-blend-multiply image-sm"
               src="/beard-guitar-logo.png"
@@ -184,10 +197,6 @@ export const Footer = () => {
               height={150}
             />
           </a>
-          
-        </div>
-
-        <div className="flex justify-center pt-4 px-2 image-container">
           <a className="flex mx-1 sm:mx-2 self-center image-sm" href="https://gallagherguitar.com/" >
             <Image
               className="mix-blend-multiply image-sm"
@@ -200,7 +209,7 @@ export const Footer = () => {
           <a className="flex mx-1 sm:mx-2 sm:ml-8 self-center image-sm" href="https://themusicemporium.com/" >
             <Image
               className="mix-blend-multiply image-sm"
-              src="/MusicEmporium_Logo.png"
+              src="/musicemporium.png"
               alt="Music Emporium"
               width={60}
               height={150}
