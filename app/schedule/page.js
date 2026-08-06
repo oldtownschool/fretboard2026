@@ -285,7 +285,11 @@ export default function Schedule() {
               
               <div>
                 <p className="font-bold mt-4 leading-relaxed" >4pm Hands-On Class: Build a Pedal with Summer School's Mark Turley </p>
-                <p className="text-lg leading-relaxed" >Never touched a soldering iron? Not a problem! Summer School Electronics’ founder Mark Turley leads a beginner-friendly class where each participant will build their very own drive pedal. Note: Due to materials cost, a separate admission is required (reserve your spot here). (B-4, West)</p>
+                <p className="text-lg leading-relaxed" >Never touched a soldering iron? Not a problem! Summer School Electronics’ founder Mark Turley leads a beginner-friendly class where each participant will build their very own drive pedal. Note: Due to materials cost, a separate admission is required. <a href="https://www.summerschoolelectronics.com/shop/p/fretboard-summit-pedal-building-class-amnk8" className="text-center my-10">
+                    <button className="tracking-wider text-xl font-aurochs px-2 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
+                    Reserve your spot here
+                    </button>
+                  </a> (B-4, West)</p>
               </div>
             </div>
             
@@ -430,7 +434,11 @@ export default function Schedule() {
               
               <div>
                 <p className="font-bold mt-4 leading-relaxed" >4pm Hands-On Class: Build a Pedal with Summer School's Mark Turley (Intermediate Level)</p>
-                <p className="text-lg leading-relaxed" >For those who attended last year’s Summer School class: Here’s your graduate school! Summer School Electronics’ founder Mark Turley leads an intermediate class, where each participant will build their very own pedal. Note: Due to materials cost, a separate admission is required (reserve your spot here). (B-4, West)</p>
+                <p className="text-lg leading-relaxed" >For those who attended last year’s Summer School class: Here’s your graduate school! Summer School Electronics’ founder Mark Turley leads an intermediate class, where each participant will build their very own pedal. Note: Due to materials cost, a separate admission is required. <a href="https://www.summerschoolelectronics.com/shop/p/fretboard-summit-pedal-building-class-amnk8" className="text-center my-10">
+                    <button className="tracking-wider text-xl font-aurochs px-2 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
+                    Reserve your spot here
+                    </button>
+                  </a> (B-4, West)</p>
               </div>
             </div>
             

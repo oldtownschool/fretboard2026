@@ -71,7 +71,7 @@ export default function Luthiers() {
           <p className="italic text-sm leading-relaxed">* asterisk indicates sponsor</p>
 
 
-          <input className="my-4 p-2" type="search" id="tableSearch" placeholder="Type to search Exhibitors..."></input>
+          <input className="w-full my-4 p-2" type="search" id="tableSearch" placeholder="Type to search Exhibitors..."></input>
 
           <table className="table-auto" id="dataTable">
             <thead>
