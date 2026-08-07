@@ -432,7 +432,7 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="https://k-lineguitars.com/">K-Line Guitars</Link></td>
                 <td>Electrics</td>
-                <td>E128</td>
+                <td>E126</td>
               </tr>
               <tr>
                 <td><Link href="https://johnkinnairdguitars.com/">Kinnaird Guitars</Link></td>
@@ -536,7 +536,7 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="https://www.instagram.com/mothguitars/?hl=en">Moth Guitars</Link></td>
                 <td>Electrics</td>
-                <td>E128</td>
+                <td>E126</td>
               </tr>
               <tr>
                 <td><Link href="https://www.muleresophonic.com/">Mule Resophonic Guitars</Link></td>
@@ -745,7 +745,7 @@ export default function Luthiers() {
               <tr>
                 <td className="font-bold"><Link href="https://www.fretboardjournal.com/podcasts/the-truth-about-vintage-amps-big-index-page/">Truth About Vintage Amps*</Link></td>
                 <td>Amplifiers</td>
-                <td>E130</td>
+                <td>E128</td>
               </tr>
               <tr>
                 <td className="font-bold"><Link href="https://www.two-rock.com/">Two-Rock Amplifiers*</Link></td>
