@@ -109,3 +109,16 @@ thead>tr:hover {
 .slick-slide img {
   padding: 0 0.25em;
 }
+
+.event {
+  border: solid 1px;
+  border-color: white;
+  margin: 1em 0 0;
+  padding: 1em;
+}
+#tabs {
+  flex-wrap: wrap;
+}
+#tabs button.active {
+  background: #4DB3AC;
+}
