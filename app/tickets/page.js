@@ -201,10 +201,10 @@ export default function Tickets() {
           </p> */}
           <div className="w-full sm:flex-row sm:flex sm:w-3/4">
             <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1]  cursor-not-allowed">
-            Showcase Only - Fri&nbsp;August&nbsp;21
+            Showcase Only -  $30 Fri&nbsp;August&nbsp;21
             </button>
             <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1]  cursor-not-allowed ml-0 sm:ml-1">
-            Showcase Only - Sat&nbsp;August&nbsp;22
+            Showcase Only -  $30 Sat&nbsp;August&nbsp;22
             </button>
             {/* <Link href="https://www.oldtownschool.org/events/event.php?event_id=9483" className="text-center">
               <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
@@ -218,7 +218,7 @@ export default function Tickets() {
             </Link> */}
           </div>
           <p className="text-white text-lg italic">
-            Tickets will also be available at the door
+            Tickets are available at the door
           </p>
          
 
@@ -235,6 +235,11 @@ export default function Tickets() {
             <Link href="https://www.oldtownschool.org/concerts/2026/08-21-2026-deep-sea-diver-solo-hand-habits" className="text-center sm:ml-1">
               <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
               Deep Sea Diver (solo) / Hand Habits - Concert Only
+              </button>
+            </Link>
+            <Link href="https://www.oldtownschool.org/concerts/2026/08-21-2026-michael-daves-and-jacob-joliff/" className="text-center sm:ml-1">
+              <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
+              Michael Daves & Jacob Joliff - Concert Only
               </button>
             </Link>
             {/* <p>Pending Availability</p> */}

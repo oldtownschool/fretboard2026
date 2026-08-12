@@ -56,17 +56,19 @@ export default function Music() {
             Great concerts in Old Town School’s legendary concert halls are a key component of Fretboard Summit!
           </h4>
           <p className="font-bold text-2xl mt-6 text-[#F0E5D1]">
-          Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Cameron Knowler, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers (featuring Steve Dawson, Fats Kaplin, Richard Bennett, Andy Reiss, & Dave Jacques) Shane Parish and much more.
+          Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Cameron Knowler, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers (featuring Steve Dawson, Fats Kaplin, Richard Bennett, Andy Reiss, & Dave Jacques), fingerstyle great Shane Parish and much more.
           </p>
           <p className="font-bold text-base mt-6 text-[#F0E5D1]">
           Full Concert Schedule & Bios coming soon!
           </p>
-
-          <a href="/tickets" className="text-center my-10">
-          <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
-            Buy Tickets
-          </button>
-        </a>
+          <p className="text-center my-10">
+            <a href="/tickets">
+              <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
+                Buy Tickets
+              </button>
+            </a>
+          </p>
+          
 
         {/* before event happens show these slides, then comment out the week of the event */}
         <Slider {...settings}>
@@ -99,7 +101,13 @@ export default function Music() {
           </div>
         </Slider>
 
+
+        <p className="font-bold text-base mt-10 text-[#F0E5D1]">Please note: 3-day and 1-day All Access passholders can attend or sample as many shows as they desire. Individual concert tickets are available on <a className="underline" href="https://oldtownschool.org/concerts">oldtownschool.org/concerts</a></p>
+
+        <p className="font-bold text-base mt-6 text-[#F0E5D1]">All concert seating is general admission. Doors open 45-minutes prior to showtime</p>
         </div>
+
+        
 
 
         {/* <div className="block sm:flex sm:flex-row mt-10 max-w-5xl p-2 sm:p-0">
@@ -135,7 +143,7 @@ export default function Music() {
               <span className="font-bold">Cesar Rosas & The Chi-Town Playboys</span>
             </h2>
           </div>
-        </div>  */}
+        </div> */}
 
         {/*<div className="block sm:flex sm:flex-row max-w-5xl p-2 sm:p-0">
           
@@ -244,13 +252,13 @@ export default function Music() {
           </Link>
         </div>  */}
 
-        {/* <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#F0E5D1] text-[#322D25]">
+        <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#F0E5D1] text-[#322D25]">
           <h2 className="tracking-wider font-aurochs font-normal uppercase text-5xl text-center">
-            Last Year&apos;s Performances
-          </h2> */}
+            2026 Featured Concerts
+          </h2>
 
           
-          {/* <h4 className="tracking-wide font-aurochs text-3xl mt-6">Thursday, August 21, 2025 </h4> */}
+          <h4 className="tracking-wide font-aurochs text-3xl mt-6">Thursday, August 20 </h4>
 
           
 
@@ -263,16 +271,16 @@ export default function Music() {
             </div>
           </div> */}
           
-          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Cesar Rosas & The Chi-Town Playboys</h3>
-          <Image
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Cesar Rosas & The Chi-Town Playboys</h3> */}
+          {/* <Image
             src="/COMPwHUNTER-CesarRosas.jpg"
             alt="Cesar Rosas"
             className="self-start mb-2"
             width={600}
             height={400}
             style={{ maxHeight: '450px', maxWidth: '350px'}}
-            />  
-          <p className="mt-4">
+            />   */}
+          {/* <p className="mt-4">
             Cesar Rosas, founding member of the iconic band Los Lobos, plays a wide spectrum of music from traditional flavors to mind altering sounds.
           </p> */}
 
@@ -287,17 +295,28 @@ export default function Music() {
 
 
 
-          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Charlie Hunter & Ella Feingold</h3>
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Charlie Hunter & Ella Feingold</h3> */}
 
-          <Image
+          {/* <Image
             src="/Ella_CH.png"
             alt="Charlie Hunter & Ella Feingold"
             className="self-start mb-2"
             width={600}
             height={400}
-          />
+          /> */}
 
-          <p className="mt-4">Acclaimed guitarists Charlie Hunter and Ella Feingold perform from their new duo album, &apos;Different Strokes for Different Folks.&apos; This exploratory duo project is a deep dive into the art of musical conversation. Built on a foundation of rhythm, space, and groove, Hunter and Feingold engage in a fluid, improvisational exchange, pushing beyond conventional structures to create something raw, immediate, and deeply immersive. Their interplay unfolds like a dialogue—organic, unpredictable, and rich with nuance—where silence holds as much weight as sound.</p>
+          {/* <p className="mt-4">Acclaimed guitarists Charlie Hunter and Ella Feingold perform from their new duo album, &apos;Different Strokes for Different Folks.&apos; This exploratory duo project is a deep dive into the art of musical conversation. Built on a foundation of rhythm, space, and groove, Hunter and Feingold engage in a fluid, improvisational exchange, pushing beyond conventional structures to create something raw, immediate, and deeply immersive. Their interplay unfolds like a dialogue—organic, unpredictable, and rich with nuance—where silence holds as much weight as sound.</p> */}
+
+
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Jake Xerxes Fussell (Thursday 8pm - Maurer Hall)</h3>
+          <p className="mt-4">North Carolina-based Jake Xerxes Fussell is a singer-songwriter known for crafting original (and mesmerizing) interpretations of traditional Southern folk and blues. Look for his latest album, The Old Beloved Path, out September 18th on Fat Possum Records.</p>
+
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Cameron Knowler (Thursday 8pm - Maurer Hall)</h3>
+          <p className="mt-4">Cameron Knowler is an instrumental guitarist and music historian based in Nashville, Tennessee. His music is equally influenced by the playing of Norman Blake and other Americana legends, with atmospheric touches that evoke Cameron's Southwest roots.</p>
+
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">The Volcano Brothers (Thursday 8pm - Szold Hall)</h3>
+          <p className="mt-4">This year’s Summit features a debut Chicago appearance by the Volcano Brothers, a veritable Nashville supergroup. Hear session aces Steve Dawson, Fats Kaplin, Richard Bennett, Dave Jacques, and Andy Reiss give their take on jazz-fueled Hawaiian music of the 1920s and ‘30s. </p>
+
 
 
           <div className="flex justify-center  my-12">
@@ -308,57 +327,68 @@ export default function Music() {
               width={350}
               height={5}
             />
-          </div> */}
+          </div>
 
 
-          {/* <h4 className="tracking-wide font-aurochs text-3xl mt-6">Friday, August 22, 2025</h4>
+          <h4 className="tracking-wide font-aurochs text-3xl mt-6">Friday, August 21</h4>
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Dave Hill
 
-          </h3>
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Deep Sea Diver Solo (Friday 8pm - Maurer Hall )</h3>
+<p className="mt-4">Deep Sea Diver's Jessica Dobson is a modern-day guitar hero. Before starting Deep Sea Diver, Dobson performed in the Shins, and for Beck, Conor Oberst, Spoon and the Yeah Yeah Yeahs. In addition to performing, Dobson will be leading an all-access session on how pedals shape her songwriting.</p>
 
-          <Image
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Hand Habits (Friday 8pm - Maurer Hall)</h3>
+<p className="mt-4">Hand Habits is the alter ego of Meg Duffy, a guitarist who has played alongside the War on Drugs, Perfume Genius, Kevin Morby and others. Meg’s inventive use of pedals, great playing and stellar vocals has made them one of the most in-demand LA session artists today. </p>
+
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Michael Daves & Jacob Jolliff (Friday 8pm - Szold Hall)</h3>
+<p className="mt-4">Guitarist Michael Daves and mandolin player Jacob Jolliff are two of the most energetic bluegrass players performing today. Their latest record, We Like Jim & Jesse!, celebrates the inventive music of Jim and Jesse McReynolds, but both of these musicians are true scholars of bluegrass. Daves is a frequent collaborator with Chris Thile, while Jolliff has played with Joy Kills Sorry, Yonder Mountain String Band, and with his own band. Both performers will also be teaching workshops at the Summit for all-access passholders. </p>
+
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Frank Solivan and Jack Dunlap (Friday 8pm - Szold Hall)</h3>
+<p className="mt-4">Mandolin player Frank Solivan and guitarist Jack Dunlap both perform in progressive bluegrass ensemble Frank Solivan & Dirty Kitchen, winners of the 2014 IBMA Bluegrass Award for Instrumental Group of the Year. Frank is also the proprietor of Tone Slabs picks, exhibiting throughout the weekend at this year’s Summit.  </p>
+
+
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Dave Hill</h3> */}
+
+          {/* <Image
             src="/DAVE_PromoPhotoA.jpg"
             alt="Dave Hill"
             className="self-start mb-2"
             width={600}
             height={400}
-          />
+          /> */}
 
-          <p className="mt-4">
+          {/* <p className="mt-4">
           Dave Hill is a comedian, writer, actor, and guitar player originally from Cleveland but now living in New York City. &quot;Cult New York comedian Hill is a hugely talented funnyman.&quot; - Time Out London. : Dave Hill presents a guitar-centric comedy show filled with jokes, stories and so many guitar solos your face is gonna melt off, probably. Feeling brave? He&apos;ll also be rating audience pedal boards (bring a pic!)
-          </p>
+          </p> */}
 
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Jonathan Stout & Erik McIntyre Jazz Duo</h3>
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Jonathan Stout & Erik McIntyre Jazz Duo</h3> */}
 
-          <Image
+          {/* <Image
             src="/Stout_McIntyre_FBS25.png"
             alt="Jonathan Stout & Erik Mcintyre"
             className="self-start mb-2"
             width={600}
             height={400}
-          />
+          /> */}
 
-          <p className="mt-4">Jazz guitarist Jonathan Stout makes his return to the Fretboard Summit for an unforgettable set of music with collaborator Erik McIntyre.</p> */}
+          {/* <p className="mt-4">Jazz guitarist Jonathan Stout makes his return to the Fretboard Summit for an unforgettable set of music with collaborator Erik McIntyre.</p> */}
 
           
-          {/* <h3 className="tracking-wide font-aurochs text-3xl font-bold mt-6">Valerie June</h3>
-          <h4 className="tracking-wide font-aurochs text-3xl mb-2">Sunday, August 25</h4>
+          {/* <h3 className="tracking-wide font-aurochs text-3xl font-bold mt-6">Valerie June</h3> */}
 
-          <Image
+          {/* <Image
             src="/ValerieJune_FBS_960x640.jpg"
             alt="Valerie June"
             className="self-start mb-2"
             width={600}
             height={400}
-          />
+          /> */}
 
-          <p className="mt-4">
+          {/* <p className="mt-4">
           Valerie June Hockett is a Grammy-nominated artist from Tennessee. She&apos;s been hailed by the New York Times as one of America&apos;s &lsquo;most intriguing, fully formed new talents.&rsquo; She is a musician, singer, songwriter, poet, illustrator, actor, certified yoga and mindfulness meditation instructor, and author. She has recorded three critically-acclaimed, best-selling solo albums and has also written songs for legendary artists such as Mavis Staples and The Blind Boys of Alabama. Her albums have been praised by numerous publications such as Pitchfork, Rolling Stone, NPR Music, No Depression, Paste Magazine, Mojo, and many others. She is also the author of the children&apos;s book Somebody to Love: The Story of Valerie June&apos;s Sweet Little Baby Banjolele, published by Jack White&apos;s Third Man Books.
-          </p>
+          </p> */}
 
-          <div className="flex items-center divide-x-2 divide-gray-500 mt-6">
+          {/* <div className="flex items-center divide-x-2 divide-gray-500 mt-6">
             <span className="pr-3 font-medium text-gray-900"><Link
               href="https://www.valeriejune.com/">https://www.valeriejune.com/ </Link> </span>
             <span className="pl-3 text-sm text-gray-500"><Link
@@ -366,7 +396,7 @@ export default function Music() {
           </div> */}
 
 
-          {/* <div className="flex justify-center  my-12">
+          <div className="flex justify-center  my-12">
             <Image
               className="hidden md:flex self-center"
               src="/borderRed2.png"
@@ -376,32 +406,45 @@ export default function Music() {
             />
           </div>
 
-          <h4 className="tracking-wide font-aurochs text-3xl mt-6">Saturday, August 23, 2025</h4>
+          <h4 className="tracking-wide font-aurochs text-3xl mt-6">Saturday, August 22</h4>
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Lyle Lovett with special guest John Smith</h3>
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Shane Parish (Saturday 8pm - Maurer Hall) </h3>
+<p className="mt-4">Shane Parish is a guitarist, composer, improviser, and interpreter whose work focuses on the translation of music across traditions, canons, and technologies. Known for his precise and expressive fingerstyle technique and his nuanced approach to transcription, Parish treats interpretation as a compositional practice, using existing works as material for structural and sonic transformation. His recent solo recordings center on recontextualizing music not originally written for guitar, including Autechre Guitar (2026, Palilalia Records), where he crafts acoustic fingerstyle arrangements of music by the English electronic duo Autechre. </p>
 
-          <Image
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Jonathan Stout (Saturday 8pm - Maurer Hall)</h3>
+<p className="mt-4">Jonathan Stout is a Southern California-based jazz guitarist best known as a bandleader in the swing dance world. This Fretboard Summit alum is a true scholar of archtop guitar, jazz and, especially, Benny Goodman guitarist Allan Reuss. </p>
+
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Twanguero (Saturday 8pm - Maurer Hall) </h3>
+<p className="mt-4">Latin Grammy winner Diego Garcia is best known simply as Twanguero. A Collings Guitars artist, Twanguero can play it all: jazz, rockabilly, Spanish guitar, country and seemingly all points in between. He recently formed a world music collective, Los Silverbacks, along with Argentinian and Congolese artists. Based out of LA, Garcia is currently working on new music for both his Twanguero project and the new band.</p>
+
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Gabe Noel (Saturday 8pm - Maurer Hall)</h3>
+<p className="mt-4">Saturday’s all-star jam will include a rare hometown performance from Gabe Noel, a musician who learned at the Old Town School of Folk Music before moving to LA and has appeared on records by Dijon, Sombr, Harry Styles, Kendrick Lamar and other superstars. Best known as a bassist, cellist, composer, and arranger, Gabe will be channeling his four-course roots through a 1935 Rickenbacher Spanish Electro Vibrola tenor guitar he picked up at an estate sale. He tunes it like a cello and has affectionately named it “the Chellar.”</p>
+
+
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-4 mb-2">Lyle Lovett with special guest John Smith</h3> */}
+
+          {/* <Image
             src="/HORIZ-LyleLovett.jpeg"
             alt="Lyle Lovett"
             className="self-start mb-2"
             width={600}
             height={400}
-          />
+          /> */}
 
-          <Image
+          {/* <Image
             src="/JohnSmith.webp"
             alt="JohnSmith"
             className="self-start mb-2"
             width={600}
             height={400}
-          />
+          /> */}
 
-          <p className="mt-4">
+          {/* <p className="mt-4">
           Coupled with his gift for storytelling, Lyle Lovett fuses elements of country, swing, jazz, folk, gospel, and blues in a convention-defying manner that breaks down barriers and broadens the definition of American music. John Smith was dubbed “the future of folk music” by Pentangle’s John Renbourn, but the singer-songwriter’s unique synthesis of styles puts him halfway across the Atlantic as purveyor of American atmospherics. Performing a solo set of music and sharing stories about his old friend, Bill Collings.  Brought to you by Collings Guitars
-          </p>
+          </p> */}
 
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">LA Session Greats: Dylan Day, Harrison Whitford, Ryan Richter</h3>
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">LA Session Greats: Dylan Day, Harrison Whitford, Ryan Richter</h3>
 
           <Image
             src="/LASessionGreats.png"
@@ -425,11 +468,11 @@ export default function Music() {
             height={400}
           />
 
-          <p className="mt-4">Dan Bitney is an experimental musician and composer based in Chicago. He works within avant-garde electronic, rock and improvisational groups, most notably Tortoise,  Isotope 217 and Spectralina. LeRoy Bach is a Grammy-winning artist, having worked with Wilco, Theaster Gates, 5ive Style and many others.  Bach currently collaborates with Official Claire and Marvin Tate. Bitney & Bach have a long-standing duo collaboration. With drums, electronics, electric guitar they perform hypnotic, swingin, rockin&apos; sprawling landscapes, backed up with rich, rooted improvisations.   </p>
+          <p className="mt-4">Dan Bitney is an experimental musician and composer based in Chicago. He works within avant-garde electronic, rock and improvisational groups, most notably Tortoise,  Isotope 217 and Spectralina. LeRoy Bach is a Grammy-winning artist, having worked with Wilco, Theaster Gates, 5ive Style and many others.  Bach currently collaborates with Official Claire and Marvin Tate. Bitney & Bach have a long-standing duo collaboration. With drums, electronics, electric guitar they perform hypnotic, swingin, rockin&apos; sprawling landscapes, backed up with rich, rooted improvisations.   </p> */}
 
 
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Anna Vogelzang </h3>
+          {/* <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Anna Vogelzang </h3>
 
           <Image
             src="/AV-Headshot-creditAudreRaePhotography.jpg"
@@ -441,8 +484,8 @@ export default function Music() {
 
           <p className="mt-4">Anna Vogelzang believes in the power of songs. Since 2004, the Chicago-based multi-instrumentalist has independently released 7 award-winning albums and toured extensively throughout the US, opening for a wide range of acts from Gillian Welch to Sara Bareilles. Atwood Magazine says her songwriting is &quot;beautifully visceral&quot;, exuding  &quot;the kind of storytelling ability passed down through decades of folk tradition - it walks the line between the modern and the nostalgic&quot;. Her voice has been described as &quot;an ethereal, lucid thing&quot; that &quot;nets melodies like it&apos;s catching monarchs&quot;.</p> */}
 
-{/* 
-          <h3 className="tracking-wide font-aurochs text-3xl font-bold mt-6 ">Blake Mills</h3>
+
+          {/* <h3 className="tracking-wide font-aurochs text-3xl font-bold mt-6 ">Blake Mills</h3>
           <h4 className="tracking-wide font-aurochs text-3xl  mb-2">Friday, August 23</h4>
 
           <Image
@@ -455,16 +498,16 @@ export default function Music() {
 
           <p className="mt-4">
           Grammy Award winner and two-time Grammy Award Producer of the Year nominee, Blake Mills has released four acclaimed solo albums and produced, played and recorded with artists such as Fiona Apple, Alabama Shakes, Phoebe Bridgers, Perfume Genius, Moses Sumney, Bob Dylan, Laura Marling, Cass McCombs, Weyes Blood and Randy Newman, among others. Most recently, Mills worked as the Executive Music Producer and chief songwriter on Amazon Prime&apos;s limited series Daisy Jones and the Six.
-          </p>
+          </p> */}
 
-          <div className="flex items-center divide-x-2 divide-gray-500 mt-6">
+          {/* <div className="flex items-center divide-x-2 divide-gray-500 mt-6">
             <span className="pr-3 font-medium text-gray-900"><Link
               href="https://www.blakemillsonline.com/">https://www.blakemillsonline.com/ </Link> </span>
             <span className="pl-3 text-sm text-gray-500"><Link
             href="https://www.youtube.com/watch?v=jGIt3EL1He8">YouTube</Link> </span>
-          </div> */}
+          </div>
 
-          {/* <h3 className="tracking-wide font-aurochs text-3xl font-bold mt-6 ">Joe Henry</h3>
+          <h3 className="tracking-wide font-aurochs text-3xl font-bold mt-6 ">Joe Henry</h3>
           <h4 className="tracking-wide font-aurochs text-3xl mb-2">Friday, August 23</h4>
 
           <Image
@@ -487,7 +530,7 @@ export default function Music() {
           </div> */}
 
 
-        {/* </div> */}
+        </div>
 
         {/* <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#A4CCDA] text-[#322D25]">
           <h2 className="tracking-wider font-aurochs font-normal uppercase text-5xl text-center">
