@@ -557,7 +557,7 @@ export default function Schedule() {
               <div className="event">
                 <div className=" font-bold text-lg leading-relaxed">
                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>1pm | Evan Gluck's Guitar Repair Panel </div>
+                  <div>1:00 PM | Evan Gluck's Guitar Repair Panel </div>
                 </div>
                 <div className="font-semibold">
                   Maurer Hall - West
@@ -570,7 +570,7 @@ export default function Schedule() {
               <div className="event">
                 <div className=" font-bold text-lg leading-relaxed">
                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>1pm | Masterclass: The Guitar Styles of Norman Blake with Michael Daves </div>
+                  <div>1:00 PM | Masterclass: The Guitar Styles of Norman Blake with Michael Daves </div>
                 </div>
                 <div className="font-semibold">
                   Szold Hall - East
