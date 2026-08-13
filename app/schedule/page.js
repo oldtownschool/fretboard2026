@@ -41,684 +41,769 @@ export default function Schedule() {
   };
 
 
-  const [activeTab, setActiveTab] = useState("all");
+  // const [activeTab, setActiveTab] = useState("all");
 
-  const tabs = [
-    { id: "all", label: "All Days"},
-    { id: "tab2", label: "Thursday", content: (
-            <div className="dayOfWeek tabcontent" id="Thursday">
-              <h3 className="mt-10 font-aurochs uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Thursday, August 20</h3>
-                <p className="italic my-2  text-base" >(3-Day Passholders Only) 
-                  Check-in begins at 10am. </p>
+  // const tabs = [
+  //   { id: "all", label: "All Days"},
+  //   { id: "tab2", label: "Thursday", content: (
+  //           <div className="dayOfWeek tabcontent" id="Thursday">
+  //             <h3 className="mt-10 font-aurochs uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Thursday, August 20</h3>
+  //               <p className="italic my-2  text-base" >(3-Day Passholders Only) 
+  //                 Check-in begins at 10am. </p>
               
-                <div className="event">
-                  <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <div className="font-bold leading-relaxed" > 10:00 AM | Registration / Check-In </div>
-                  </div>
-                  <div className="font-semibold">
-                    4544 N Lincoln Ave, Chicago, IL 60625
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <div className="font-bold leading-relaxed" > 10:00 AM | Registration / Check-In </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   4544 N Lincoln Ave, Chicago, IL 60625
+  //                 </div>
+  //               </div>
                 
-                <div className="event">
-                  <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <div>12:00 PM | Opening Remarks </div>
-                  </div>
-                  <div className="font-semibold">
-                    Maurer Hall - West
-                  </div>
-                  <div className="mt-3">
-                    Just for three-day passholders: Old Town School of Folk Music CEO Troy Anderson and Fretboard Journal founder Jason Verlinde welcome you to the 2026 Fretboard Summit. We'll also go over logistics, surprise lineup additions, updates and more.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <div>12:00 PM | Opening Remarks </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Maurer Hall - West
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Just for three-day passholders: Old Town School of Folk Music CEO Troy Anderson and Fretboard Journal founder Jason Verlinde welcome you to the 2026 Fretboard Summit. We'll also go over logistics, surprise lineup additions, updates and more.
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                    <div>1:00 PM | Luthier & Exhibitor Showcase Preview Opens</div>
-                  </div>
-                  <div className="font-semibold">
-                    Both OTSFM buildings
-                  </div>
-                  <div className="mt-3">
-                    Exclusive preview of the Summit lutherie showcase just for three-day attendees. Scattered between the Old Town School of Folk Music's two buildings, Summit-goers will find nearly 100 brands and solo builders showcasing the latest in gear, including prototypes and new product launches. You’ll also have ample opportunities to meet some of the legends of the gear industry. Demo/listening rooms are available if you need a quiet space to try things out…or an amp to plug things in.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                   <div>1:00 PM | Luthier & Exhibitor Showcase Preview Opens</div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Both OTSFM buildings
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Exclusive preview of the Summit lutherie showcase just for three-day attendees. Scattered between the Old Town School of Folk Music's two buildings, Summit-goers will find nearly 100 brands and solo builders showcasing the latest in gear, including prototypes and new product launches. You’ll also have ample opportunities to meet some of the legends of the gear industry. Demo/listening rooms are available if you need a quiet space to try things out…or an amp to plug things in.
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                    <div>1:00 PM | From K&F to CBS: The Real Relics of Fender History </div>
-                  </div>
-                  <div className="font-semibold">
-                    Maurer Hall - West
-                  </div>
-                  <div className="mt-3">
-                    Acclaimed guitar historian Terry Foster shows rare and unseen items from his collection that helped shape the future of electric guitar. Presentation followed by Q&A.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                   <div>1:00 PM | From K&F to CBS: The Real Relics of Fender History </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Maurer Hall - West
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Acclaimed guitar historian Terry Foster shows rare and unseen items from his collection that helped shape the future of electric guitar. Presentation followed by Q&A.
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                    <div>1:00 PM | Jens Kruger  </div>
-                    <div></div>
-                  </div>
-                  <div className="font-semibold">
-                    Szold Hall - East
-                  </div>
-                  <div className="mt-3">
-                    Bluegrass hero Jens Kruger teaches banjo for guitar players! Whether you already play or are just banjo curious, learn the magic of the 5-string from this former recipient of the Steve Martin Prize for Excellence in Banjo and Bluegrass. 
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                   <div>1:00 PM | Jens Kruger  </div>
+  //                   <div></div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Szold Hall - East
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Bluegrass hero Jens Kruger teaches banjo for guitar players! Whether you already play or are just banjo curious, learn the magic of the 5-string from this former recipient of the Steve Martin Prize for Excellence in Banjo and Bluegrass. 
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                    <div>2:00 PM | Fats Kaplin </div>
-                  </div>
-                  <div className="font-semibold">
-                    Szold Hall - East
-                  </div>
-                  <div className="mt-3">
-                    <p>Acclaimed Nashville musician Fats Kaplin will discuss the instruments, techniques, and musical traditions he has spent a lifetime studying and using on stage and in the studio with artists ranging from John Prine and Mitski to Jack White and the Dead Reckoners. A singular multi-instrumentalist on fiddle, banjo, guitar, ukulele, mandolin, steel guitar and more, Fats has followed an intriguing path through music: years on the road with Roy Book Binder, a long stretch touring the world with Tom Russell, and eventually landing in Nashville, where he has become one of the city’s most respected and in-demand players.</p>
-                    <p>In this session, Fats demonstrate some of the techniques and sounds that have shaped his playing, and dig into the music that continues to fuel his desire to learn, create, and keep pushing forward.</p>
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                   <div>2:00 PM | Fats Kaplin </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Szold Hall - East
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   <p>Acclaimed Nashville musician Fats Kaplin will discuss the instruments, techniques, and musical traditions he has spent a lifetime studying and using on stage and in the studio with artists ranging from John Prine and Mitski to Jack White and the Dead Reckoners. A singular multi-instrumentalist on fiddle, banjo, guitar, ukulele, mandolin, steel guitar and more, Fats has followed an intriguing path through music: years on the road with Roy Book Binder, a long stretch touring the world with Tom Russell, and eventually landing in Nashville, where he has become one of the city’s most respected and in-demand players.</p>
+  //                   <p>In this session, Fats demonstrate some of the techniques and sounds that have shaped his playing, and dig into the music that continues to fuel his desire to learn, create, and keep pushing forward.</p>
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                    <div>3:00 PM | Twenty-One Years of the Fretboard Journal: Live Podcast Taping </div>
-                    <div></div>
-                  </div>
-                  <div className="font-semibold">
-                    Maurer Hall - West
-                  </div>
-                  <div className="mt-3">
-                    What does it take to sustain an independent magazine for two decades? Fretboard Journal founder Jason Verlinde sits down with the one person who has seen it all - his wife! - for a behind-the-scenes conversation about the people, stories, and instincts that shaped the publication, and what still drives him today. Audience Q&A to follow.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                   <div>3:00 PM | Twenty-One Years of the Fretboard Journal: Live Podcast Taping </div>
+  //                   <div></div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Maurer Hall - West
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   What does it take to sustain an independent magazine for two decades? Fretboard Journal founder Jason Verlinde sits down with the one person who has seen it all - his wife! - for a behind-the-scenes conversation about the people, stories, and instincts that shaped the publication, and what still drives him today. Audience Q&A to follow.
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                    <div>3:00 PM | Jazz duos with Andy Reiss and Jonathan Stout </div>
-                  </div>
-                  <div className="font-semibold">
-                   Szold Hall - East
-                  </div>
-                  <div  className="mt-3">
-                    Returning Fretboard Summit performer Jonathan Stout is joined by Andy Reiss (Volcano Brothers) for a midday jazz performance.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                   <div>3:00 PM | Jazz duos with Andy Reiss and Jonathan Stout </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                  Szold Hall - East
+  //                 </div>
+  //                 <div  className="mt-3">
+  //                   Returning Fretboard Summit performer Jonathan Stout is joined by Andy Reiss (Volcano Brothers) for a midday jazz performance.
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                    <div>4:00 PM | The Working Guitarist's Journey </div>
-                  </div>
-                  <div className="font-semibold">
-                   Maurer Hall - West
-                  </div>
-                  <div className="mt-3">
-                    Corey Congilio talks about his journey as a pro guitarist and the realities of being a working musician in 2026. He'll discuss the gear that he depends on and how to build a skill set so that one can adapt to any instrument that they are presented with.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                   <div>4:00 PM | The Working Guitarist's Journey </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                  Maurer Hall - West
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Corey Congilio talks about his journey as a pro guitarist and the realities of being a working musician in 2026. He'll discuss the gear that he depends on and how to build a skill set so that one can adapt to any instrument that they are presented with.
+  //                 </div>
+  //               </div>
                 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                    <div>4:00 PM | Vintage Gibson Acoustics Petting Zoo </div>
-                  </div>
-                  <div className="font-semibold">
-                   Szold Hall - East
-                  </div>
-                  <div className="mt-3">
-                    Mark Stutman is the expert on the Gibson L-style acoustic guitar. In this Summit session, he walks us through the quirks and magic found in these instruments. In this hands-on session, participants will also have a rare opportunity to play over a dozen Gibson, Kel Kroydon and other Gibson offshoot instruments from the 1930s.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                   <div>4:00 PM | Vintage Gibson Acoustics Petting Zoo </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                  Szold Hall - East
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Mark Stutman is the expert on the Gibson L-style acoustic guitar. In this Summit session, he walks us through the quirks and magic found in these instruments. In this hands-on session, participants will also have a rare opportunity to play over a dozen Gibson, Kel Kroydon and other Gibson offshoot instruments from the 1930s.
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                    <div>4:00 PM | Hands-On Class: Build a Pedal with Summer School's Mark Turley </div>
-                  </div>
-                  <div className="font-semibold">
-                   B-4, West
-                  </div>
-                  <div className="mt-3">
-                    Never touched a soldering iron? Not a problem! Summer School Electronics’ founder Mark Turley leads a beginner-friendly class where each participant will build their very own drive pedal. Note: Due to materials cost, a separate admission is required.
-                    <p className="mt-3">
-                    <a href="https://www.summerschoolelectronics.com/shop/p/fretboard-summit-pedal-building-class-amnk8" className="text-center my-10">
-                      <button className="tracking-wider text-xl font-aurochs px-2 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
-                      Reserve your spot here
-                      </button>
-                    </a>
-                  </p>
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                   <div>4:00 PM | Hands-On Class: Build a Pedal with Summer School's Mark Turley </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                  B-4, West
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Never touched a soldering iron? Not a problem! Summer School Electronics’ founder Mark Turley leads a beginner-friendly class where each participant will build their very own drive pedal. Note: Due to materials cost, a separate admission is required.
+  //                   <p className="mt-3">
+  //                   <a href="https://www.summerschoolelectronics.com/shop/p/fretboard-summit-pedal-building-class-amnk8" className="text-center my-10">
+  //                     <button className="tracking-wider text-xl font-aurochs px-2 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
+  //                     Reserve your spot here
+  //                     </button>
+  //                   </a>
+  //                 </p>
+  //                 </div>
+  //               </div>
                 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                    <div>5:00 PM | Happy Hour Hangout with William Downie Pinot Noir </div>
-                  </div>
-                  <div className="font-semibold">
-                    Szold Hall - East
-                  </div>
-                  <div className="mt-3">
-                    Meet fellow 3-day pass holders and Summit exhibitors at a complimentary wine tasting courtesy of Australia’s William Downie Pinot Noir. Additional beverages are available.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                   <div>5:00 PM | Happy Hour Hangout with William Downie Pinot Noir </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Szold Hall - East
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Meet fellow 3-day pass holders and Summit exhibitors at a complimentary wine tasting courtesy of Australia’s William Downie Pinot Noir. Additional beverages are available.
+  //                 </div>
+  //               </div>
                 
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
-                    <div>8:00 PM | Jake Xerxes Fussell &bull; Cameron Knowler </div>
-                  </div>
-                  <div className="font-semibold">
-                   Maurer Hall
-                  </div>
-                  <div className="mt-3">
-                    North Carolina-based Jake Xerxes Fussell is a singer-songwriter known for crafting original (and mesmerizing) interpretations of traditional Southern folk and blues. This performance, taking place just a few weeks before his next release on Fat Possum Records, will be unforgettable. Opening the show is Rural Guitars' Cameron Knowler, whose own instrumental music is steeped in the playing of Norman Blake and other Americana legends.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
+  //                   <div>8:00 PM | Jake Xerxes Fussell &bull; Cameron Knowler </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                  Maurer Hall
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   North Carolina-based Jake Xerxes Fussell is a singer-songwriter known for crafting original (and mesmerizing) interpretations of traditional Southern folk and blues. This performance, taking place just a few weeks before his next release on Fat Possum Records, will be unforgettable. Opening the show is Rural Guitars' Cameron Knowler, whose own instrumental music is steeped in the playing of Norman Blake and other Americana legends.
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
-                    <div>8:00 PM | The Volcano Brothers </div>
-                  </div>
-                  <div className="font-semibold">
-                   Szold Hall
-                  </div>
-                  <div className="mt-3">
-                    Jazz-fueled Hawaiian music of the 1920s and ‘30s as channeled through Nashville’s Steve Dawson, Fats Kaplin, Richard Bennett, Dave Jacques, and Andy Reiss.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
+  //                   <div>8:00 PM | The Volcano Brothers </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                  Szold Hall
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Jazz-fueled Hawaiian music of the 1920s and ‘30s as channeled through Nashville’s Steve Dawson, Fats Kaplin, Richard Bennett, Dave Jacques, and Andy Reiss.
+  //                 </div>
+  //               </div>
 
                 
-              <div className="bg-gray-200 h-2 w-full mt-6"></div>
-            </div>)
-    },
-    { id: "tab3", label: "Friday", content: (
-            <div className="dayOfWeek tabcontent" id="Friday">
-              <h3 className="font-aurochs mt-10 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Friday, August 21</h3>
-              <p className="italic my-2  text-base" >Check-in begins at 9:30am. </p>
+  //             <div className="bg-gray-200 h-2 w-full mt-6"></div>
+  //           </div>)
+  //   },
+  //   { id: "tab3", label: "Friday", content: (
+  //           <div className="dayOfWeek tabcontent" id="Friday">
+  //             <h3 className="font-aurochs mt-10 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Friday, August 21</h3>
+  //             <p className="italic my-2  text-base" >Check-in begins at 9:30am. </p>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                  <div>8:00 AM  | The Fretboard Summit 5k! </div>
-                </div>
-                <div className="mt-3">
-                  Get up early and put your trainers on for a fun run with a few demented guitar fanatics who also like to jog in circles. Route to be emailed to passholders, weather permitting.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                 <div>8:00 AM  | The Fretboard Summit 5k! </div>
+  //               </div>
+  //               <div className="mt-3">
+  //                 Get up early and put your trainers on for a fun run with a few demented guitar fanatics who also like to jog in circles. Route to be emailed to passholders, weather permitting.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                  <div>10:00 AM | Luthier & Exhibitor Showcase </div>
-                </div>
-                <div className="font-semibold">
-                  Both OTSFM buildings
-                </div>
-                <div className="mt-3">
-                  The Fretboard Summit features one of the finest collections of handmade, high-end and boutique gear under one roof. Peruse both Old Town School buildings to demo and shop for gear from nearly 100 luthiers, brands, and gear makers. Can't make the rest of the Summit activities? We'll have Lutherie Showcase-only tickets available at the door on Friday and Saturday for those who just want to shop guitars.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                 <div>10:00 AM | Luthier & Exhibitor Showcase </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Both OTSFM buildings
+  //               </div>
+  //               <div className="mt-3">
+  //                 The Fretboard Summit features one of the finest collections of handmade, high-end and boutique gear under one roof. Peruse both Old Town School buildings to demo and shop for gear from nearly 100 luthiers, brands, and gear makers. Can't make the rest of the Summit activities? We'll have Lutherie Showcase-only tickets available at the door on Friday and Saturday for those who just want to shop guitars.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>10:00 AM | Josh Scott's Can You Hear It? </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  How well do you really know the sound of your favorite pedal? JHS founder Josh Scott will test players with the ultimate Pepsi challenge from the Summit's mainstage. Expect surprises, some deep effects pedal history and plenty of laughs. 
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>10:00 AM | Josh Scott's Can You Hear It? </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 How well do you really know the sound of your favorite pedal? JHS founder Josh Scott will test players with the ultimate Pepsi challenge from the Summit's mainstage. Expect surprises, some deep effects pedal history and plenty of laughs. 
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>10:00 AM | The Many Faces of Modern Lap-Style Guitar with Steve Dawson </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Steve Dawson has been working in studios and on stage for years as a guitarist in many forms, but the steel guitar has always been his focus. Whether that’s solo gigs on Weissenborn, trad Hawaiian tricone with the Volcano Brothers, overdriven modern sounds on an Asher electro, Jerry Byrd-inspired retro lap steel, or pedal steel, Dawson has always found ways to keep interested in developing as a player and working musician. He'll do an interactive workshop where he plays a bit of those various styles, talks about tone, tunings and technique.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>10:00 AM | The Many Faces of Modern Lap-Style Guitar with Steve Dawson </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Steve Dawson has been working in studios and on stage for years as a guitarist in many forms, but the steel guitar has always been his focus. Whether that’s solo gigs on Weissenborn, trad Hawaiian tricone with the Volcano Brothers, overdriven modern sounds on an Asher electro, Jerry Byrd-inspired retro lap steel, or pedal steel, Dawson has always found ways to keep interested in developing as a player and working musician. He'll do an interactive workshop where he plays a bit of those various styles, talks about tone, tunings and technique.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>11:00 AM | Dipped in Tone Podcast Live Podcast Taping </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  Join Rhett Shull, Zach Broyles (Mythos Pedals) and Addison Sauvan for a rare, live taping of their hit podcast. Expect hot takes on industry news, favorite gear, and more.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>11:00 AM | Dipped in Tone Podcast Live Podcast Taping </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 Join Rhett Shull, Zach Broyles (Mythos Pedals) and Addison Sauvan for a rare, live taping of their hit podcast. Expect hot takes on industry news, favorite gear, and more.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>11:00 AM | In Conversation: Richard Bennett </div>
-                  <div></div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Richard Bennett is one of Nashville's most respected guitarists. In this session, he sits down with the Fretboard Journal to discuss decades of playing and performing with the likes of Mark Knopfler, Neil Diamond, Steve Earle, Emmylou Harris, and countless others. We'll talk gear, inspiration, memorable sessions and more.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>11:00 AM | In Conversation: Richard Bennett </div>
+  //                 <div></div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Richard Bennett is one of Nashville's most respected guitarists. In this session, he sits down with the Fretboard Journal to discuss decades of playing and performing with the likes of Mark Knopfler, Neil Diamond, Steve Earle, Emmylou Harris, and countless others. We'll talk gear, inspiration, memorable sessions and more.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>1:00 PM | Featured Speaker: Chris Martin IV (Martin Guitars) </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  Experience an intimate talk with Chris Martin IV, the 6th-generation owner of the iconic guitar manufacturer, C.F. Martin & Co., as he shares his passion and stories from his over 35 years at the helm of the company. Founded in 1833 in New York City, Martin Guitar has been crafting the world’s finest acoustic guitars for nearly 200 years.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>1:00 PM | Featured Speaker: Chris Martin IV (Martin Guitars) </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 Experience an intimate talk with Chris Martin IV, the 6th-generation owner of the iconic guitar manufacturer, C.F. Martin & Co., as he shares his passion and stories from his over 35 years at the helm of the company. Founded in 1833 in New York City, Martin Guitar has been crafting the world’s finest acoustic guitars for nearly 200 years.
+  //               </div>
+  //             </div>
                 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>1:00 PM | Rare & Vintage Pedals with Chris Vincent (R2R Electric) </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Returning Fretboard Summit guest Chris Vincent and Meg Duffy (Hand Habits) walk us through some of the rarest and most unobtanium pedals they cherish, including a few that have their origins in Chicago.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>1:00 PM | Rare & Vintage Pedals with Chris Vincent (R2R Electric) </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Returning Fretboard Summit guest Chris Vincent and Meg Duffy (Hand Habits) walk us through some of the rarest and most unobtanium pedals they cherish, including a few that have their origins in Chicago.
+  //               </div>
+  //             </div>
                 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                  <div>2:00 PM | The Fretboard Summit Science Fair </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Every year, we carve out an hour at the Summit to showcase the weekend's gear-making pioneers, experimenters and oddballs. It's an old-school Science Fair patterned after the one you had in Junior High, just for guitar geeks. Any exhibitors or attendees are welcome to bring their creations. Expect some jaw-dropping and some laughs. 
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                 <div>2:00 PM | The Fretboard Summit Science Fair </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Every year, we carve out an hour at the Summit to showcase the weekend's gear-making pioneers, experimenters and oddballs. It's an old-school Science Fair patterned after the one you had in Junior High, just for guitar geeks. Any exhibitors or attendees are welcome to bring their creations. Expect some jaw-dropping and some laughs. 
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>3:00 PM | Pedal Party Clinic with Jessica Dobson of Deep Sea Diver </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  Dive into the sonic universe of Deep Sea Diver with an exclusive, behind-the-scenes session led by bandleader and multi-instrumentalist Jessica Dobson. In this dynamic presentation and Q&A, Jessica will explore how guitar textures, tone shaping, and creative effects work together to build entire musical worlds in both songwriting and production. Whether you’re a gear enthusiast, a songwriter, or simply a fan of Deep Sea Diver’s signature sound, join us to uncover the artistry behind their pedal choices, sonic landscapes, and the creative decisions that bring their music to life. 
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>3:00 PM | Pedal Party Clinic with Jessica Dobson of Deep Sea Diver </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 Dive into the sonic universe of Deep Sea Diver with an exclusive, behind-the-scenes session led by bandleader and multi-instrumentalist Jessica Dobson. In this dynamic presentation and Q&A, Jessica will explore how guitar textures, tone shaping, and creative effects work together to build entire musical worlds in both songwriting and production. Whether you’re a gear enthusiast, a songwriter, or simply a fan of Deep Sea Diver’s signature sound, join us to uncover the artistry behind their pedal choices, sonic landscapes, and the creative decisions that bring their music to life. 
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>3:00 PM | Workshop: Right-hand technique with Jacob Jolliff </div>
-                  <div></div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Acclaimed mandolin player Jolliff shares techniques and life hacks that have improved his playing. Great for mandolin players, guitarists or anyone who wants to up their game.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>3:00 PM | Workshop: Right-hand technique with Jacob Jolliff </div>
+  //                 <div></div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Acclaimed mandolin player Jolliff shares techniques and life hacks that have improved his playing. Great for mandolin players, guitarists or anyone who wants to up their game.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>3:00 PM | The Hole Truth with Luthier Raymond Kraut </div>
-                  <div></div>
-                </div>
-                <div className="font-semibold">
-                  Wood & Wire booth - West 213
-                </div>
-                <div className="mt-3">
-                  Inventive acoustic guitar maker Raymond Kraut shares insights into the world of offset, square and non-traditional soundholes, plus other lutherie developments
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>3:00 PM | The Hole Truth with Luthier Raymond Kraut </div>
+  //                 <div></div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Wood & Wire booth - West 213
+  //               </div>
+  //               <div className="mt-3">
+  //                 Inventive acoustic guitar maker Raymond Kraut shares insights into the world of offset, square and non-traditional soundholes, plus other lutherie developments
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>4:00 PM | Guitar Collecting Roundtable </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  Join The Music Emporium, Mass Street Guitars, and Gearcheck for a deep chat about the perils and joys of amassing a growing guitar collection.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>4:00 PM | Guitar Collecting Roundtable </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 Join The Music Emporium, Mass Street Guitars, and Gearcheck for a deep chat about the perils and joys of amassing a growing guitar collection.
+  //               </div>
+  //             </div>
               
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>4:00 PM | Workshop: Solo Fingerstyle With Shane Parish </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Shane Parish will discuss his process for arranging music from various idioms--jazz, folk, electronica, rock, etc.- for solo fingerstyle guitar. The conversation will touch on ideas about transcription, adaptation, counterpoint, alternate tunings, notation, interpretation, timbre, practice, technique, mechanics, analysis, improvisation, and more! Specific examples from his records Autechre Guitar, Repertoire, and Solo at Cafe OTO, will be cited. Questions and suggestions encouraged.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>4:00 PM | Workshop: Solo Fingerstyle With Shane Parish </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Shane Parish will discuss his process for arranging music from various idioms--jazz, folk, electronica, rock, etc.- for solo fingerstyle guitar. The conversation will touch on ideas about transcription, adaptation, counterpoint, alternate tunings, notation, interpretation, timbre, practice, technique, mechanics, analysis, improvisation, and more! Specific examples from his records Autechre Guitar, Repertoire, and Solo at Cafe OTO, will be cited. Questions and suggestions encouraged.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>4:00 PM | Hands-On Class: Build a Pedal with Summer School's Mark Turley (Intermediate Level) </div>
-                </div>
-                <div className="font-semibold">
-                  B-4, West
-                </div>
-                <div className="mt-3">
-                  For those who attended last year’s Summer School class: Here’s your graduate school! Summer School Electronics’ founder Mark Turley leads an intermediate class, where each participant will build their very own pedal. Note: Due to materials cost, a separate admission is required.
-                  <p>
-                    <a href="https://www.summerschoolelectronics.com/shop/p/fretboard-summit-pedal-building-class-amnk8" className="text-center my-10">
-                      <button className="tracking-wider text-xl font-aurochs px-2 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
-                      Reserve your spot here
-                      </button>
-                    </a>
-                  </p>
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>4:00 PM | Hands-On Class: Build a Pedal with Summer School's Mark Turley (Intermediate Level) </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 B-4, West
+  //               </div>
+  //               <div className="mt-3">
+  //                 For those who attended last year’s Summer School class: Here’s your graduate school! Summer School Electronics’ founder Mark Turley leads an intermediate class, where each participant will build their very own pedal. Note: Due to materials cost, a separate admission is required.
+  //                 <p>
+  //                   <a href="https://www.summerschoolelectronics.com/shop/p/fretboard-summit-pedal-building-class-amnk8" className="text-center my-10">
+  //                     <button className="tracking-wider text-xl font-aurochs px-2 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
+  //                     Reserve your spot here
+  //                     </button>
+  //                   </a>
+  //                 </p>
+  //               </div>
+  //             </div>
               
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
-                  <div>8:00 PM | Deep Sea Diver (Solo) &bull; Hand Habits  </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall
-                </div>
-                <div className="mt-3">
-                  An incredible night of music with two of the most forward-thinking indie rock artists of today: Deep Sea Diver's Jessica Dobson will play a rare solo set of music alongside Hand Habits, the alter ego of Meg Duffy, a guitarist who has played alongside the War on Drugs, Perfume Genius, Kevin Morby and others. Both artists will also be doing workshop sessions during the Summit.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
+  //                 <div>8:00 PM | Deep Sea Diver (Solo) &bull; Hand Habits  </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall
+  //               </div>
+  //               <div className="mt-3">
+  //                 An incredible night of music with two of the most forward-thinking indie rock artists of today: Deep Sea Diver's Jessica Dobson will play a rare solo set of music alongside Hand Habits, the alter ego of Meg Duffy, a guitarist who has played alongside the War on Drugs, Perfume Genius, Kevin Morby and others. Both artists will also be doing workshop sessions during the Summit.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
-                  <div>8:00 PM | Michael Daves & Jacob Jolliff </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall
-                </div>
-                <div className="mt-3">
-                  Into bluegrass? We have you covered! Guitarist Michael Daves and mandolin wizard Jacob Jolliff will perform music from their latest record, We Like Jim & Jesse!, as well as other bluegrass favorites. Daves is a frequent collaborator with Chris Thile, while Jolliff has played with Joy Kills Sorry, Yonder Mountain String Band, and with his own band. Opening is another stellar mandolin/guitar duo: Frank Solivan and Jack Dunlap from the band Frank Solivan & Dirty Kitchen.  
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
+  //                 <div>8:00 PM | Michael Daves & Jacob Jolliff </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall
+  //               </div>
+  //               <div className="mt-3">
+  //                 Into bluegrass? We have you covered! Guitarist Michael Daves and mandolin wizard Jacob Jolliff will perform music from their latest record, We Like Jim & Jesse!, as well as other bluegrass favorites. Daves is a frequent collaborator with Chris Thile, while Jolliff has played with Joy Kills Sorry, Yonder Mountain String Band, and with his own band. Opening is another stellar mandolin/guitar duo: Frank Solivan and Jack Dunlap from the band Frank Solivan & Dirty Kitchen.  
+  //               </div>
+  //             </div>
 
-              <div className="bg-gray-200 h-2 w-full mt-6"></div>
-            </div>
-            )
-    },
-    { id: "tab4", label: "Saturday", content: (
-            <div className="dayOfWeek tabcontent" id="Saturday">
-              <h3 className="font-aurochs mt-10 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Saturday, August 22</h3>
-              <p className="italic my-2  text-base" >Check-in begins at 8:30am. </p>  
+  //             <div className="bg-gray-200 h-2 w-full mt-6"></div>
+  //           </div>
+  //           )
+  //   },
+  //   { id: "tab4", label: "Saturday", content: (
+  //           <div className="dayOfWeek tabcontent" id="Saturday">
+  //             <h3 className="font-aurochs mt-10 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >Saturday, August 22</h3>
+  //             <p className="italic my-2  text-base" >Check-in begins at 8:30am. </p>  
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>9:00 AM | Bob Taylor: Sustainability and the Future of Guitar Woods </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  The sustainability efforts of Taylor Guitars co-founder Bob Taylor are the stuff of legend. In this extended session, Bob will do a tell-all for guitar lovers, fellow luthiers and industry leaders on the state of affairs of tonewoods, the legislation and permitting that may affect them down the road and how they can make change. Please Note: We're starting this session early (9-10:30am) so all exhibitors can attend before the show opens.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>9:00 AM | Bob Taylor: Sustainability and the Future of Guitar Woods </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 The sustainability efforts of Taylor Guitars co-founder Bob Taylor are the stuff of legend. In this extended session, Bob will do a tell-all for guitar lovers, fellow luthiers and industry leaders on the state of affairs of tonewoods, the legislation and permitting that may affect them down the road and how they can make change. Please Note: We're starting this session early (9-10:30am) so all exhibitors can attend before the show opens.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>9:00 AM | Teach Your Children (How a Guitar is Built) – NO PASS REQUIRED, KIDS WELCOME </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Geared toward kids but open to anyone curious, this workshop aims to demystify the guitar-building process. This is your chance to hear from some experts and then try your hand with the techniques, tools, and materials needed to build a guitar. Barry Grzebik (Grez Guitars), Wade Black (3Bender), Shelby Pollard (Black Bobbin), Benny Monson (Lockhorn Instruments), and Stephen Harrison (educator and hobbyist builder) will share their experiences, answer all your guitar questions, and guide you through some guitar building basics.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>9:00 AM | Teach Your Children (How a Guitar is Built) – NO PASS REQUIRED, KIDS WELCOME </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Geared toward kids but open to anyone curious, this workshop aims to demystify the guitar-building process. This is your chance to hear from some experts and then try your hand with the techniques, tools, and materials needed to build a guitar. Barry Grzebik (Grez Guitars), Wade Black (3Bender), Shelby Pollard (Black Bobbin), Benny Monson (Lockhorn Instruments), and Stephen Harrison (educator and hobbyist builder) will share their experiences, answer all your guitar questions, and guide you through some guitar building basics.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                  <div>10:00 AM | Luthier & Exhibitor Showcase </div>
-                </div>
-                <div className="font-semibold">
-                  Both OTSFM buildings
-                </div>
-                <div className="mt-3">
-                  The Fretboard Summit features one of the finest collections of handmade, high-end and boutique gear under one roof. Peruse both Old Town School buildings to demo and shop for gear from nearly 100 luthiers, brands, and gear makers. Can't make the rest of the Summit activities? We'll have Lutherie Showcase-only tickets available at the door on Friday and Saturday for those who just want to shop guitars.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                 <div>10:00 AM | Luthier & Exhibitor Showcase </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Both OTSFM buildings
+  //               </div>
+  //               <div className="mt-3">
+  //                 The Fretboard Summit features one of the finest collections of handmade, high-end and boutique gear under one roof. Peruse both Old Town School buildings to demo and shop for gear from nearly 100 luthiers, brands, and gear makers. Can't make the rest of the Summit activities? We'll have Lutherie Showcase-only tickets available at the door on Friday and Saturday for those who just want to shop guitars.
+  //               </div>
+  //             </div>
 
               
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>10:30 AM | History: Martin Mystery Tops with Greig Hutton and TJ Thompson </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  Two of the world’s foremost experts – TJ Thompson and Greig Hutton – demystify one of the great mysteries of Martin collectors: The “mystery tops” of 1953 and 1957. It’s a deep dive into arcane guitar history, top woods, what matters and what doesn’t.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>10:30 AM | History: Martin Mystery Tops with Greig Hutton and TJ Thompson </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 Two of the world’s foremost experts – TJ Thompson and Greig Hutton – demystify one of the great mysteries of Martin collectors: The “mystery tops” of 1953 and 1957. It’s a deep dive into arcane guitar history, top woods, what matters and what doesn’t.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>11:00 AM | Songwriting 201 with Sofia Wolfson </div>
-                  <div></div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  For this year’s Summit, the Fretboard Journal's Sofia Wolfson hosts a brand new songwriting class. She will be focusing on lyrical content and using the guitar as a dynamic vehicle for writing songs. There will also be time for a few students to receive live feedback on their own material. 
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>11:00 AM | Songwriting 201 with Sofia Wolfson </div>
+  //                 <div></div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 For this year’s Summit, the Fretboard Journal's Sofia Wolfson hosts a brand new songwriting class. She will be focusing on lyrical content and using the guitar as a dynamic vehicle for writing songs. There will also be time for a few students to receive live feedback on their own material. 
+  //               </div>
+  //             </div>
                 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>1:00 PM | Evan Gluck's Guitar Repair Panel </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  Join Evan Gluck (NY Guitar Repair), TJ Thompson, Mark Stutman, Jonathan Scott and James Roadman for a lively session on all things guitar repair. Evan wanted us to call this "Between Two Nibs" so expect some laughs between all the hide glue talk.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>1:00 PM | Evan Gluck's Guitar Repair Panel </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 Join Evan Gluck (NY Guitar Repair), TJ Thompson, Mark Stutman, Jonathan Scott and James Roadman for a lively session on all things guitar repair. Evan wanted us to call this "Between Two Nibs" so expect some laughs between all the hide glue talk.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>1:00 PM | Masterclass: The Guitar Styles of Norman Blake with Michael Daves </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Bluegrass musician and historian Michael Daves walks participants through the singular guitar playing of Norman Blake. Included will be a deep dive featuring little-known facts about Blake's famed Sulfur Springs record and the gear that was used.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>1:00 PM | Masterclass: The Guitar Styles of Norman Blake with Michael Daves </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Bluegrass musician and historian Michael Daves walks participants through the singular guitar playing of Norman Blake. Included will be a deep dive featuring little-known facts about Blake's famed Sulfur Springs record and the gear that was used.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>2:00 PM | Guitar Design with Grez </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  California-based boutique builder Barry Grzebik walks us through his design process, a strategy based on data, creativity, art and guts.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>2:00 PM | Guitar Design with Grez </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 California-based boutique builder Barry Grzebik walks us through his design process, a strategy based on data, creativity, art and guts.
+  //               </div>
+  //             </div>
 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>2:00 PM | Workshop: Recording Acoustic and Electric Guitars in a Digital Age </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  LA-based studio owner and guitarist Eric Garcia (48 Windows) discusses amps, mics, processing gear, A/D converters, and more in this recording session deep dive.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>2:00 PM | Workshop: Recording Acoustic and Electric Guitars in a Digital Age </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 LA-based studio owner and guitarist Eric Garcia (48 Windows) discusses amps, mics, processing gear, A/D converters, and more in this recording session deep dive.
+  //               </div>
+  //             </div>
               
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>3:00 PM | World Premiere: JHS's Electro-Harmonix Documentary </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall - West
-                </div>
-                <div className="mt-3">
-                  On the heels of his new book, Made On Earth for Rising Stars: The Electro-Harmonix Story, Josh Scott shares the documentary he made on the project on the Summit's big screen. A Q&A will follow.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>3:00 PM | World Premiere: JHS's Electro-Harmonix Documentary </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall - West
+  //               </div>
+  //               <div className="mt-3">
+  //                 On the heels of his new book, Made On Earth for Rising Stars: The Electro-Harmonix Story, Josh Scott shares the documentary he made on the project on the Summit's big screen. A Q&A will follow.
+  //               </div>
+  //             </div>
                 
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
-                  <div>3:00 PM | Workshop: Fourths and Fifths with Gabe Noel </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Upright bassist and now "cell-ar" (cello meets guitar) player Gabe Noel has played on countless pop hits by Sombr, Kendrick Lamar, Harry Styles and others. In this workshop, Noel walks us through the magic found in four-stringed (tenor) instruments and how downsizing may just open up your sonic possibilities.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-700/10">Workshops & Speakers</span>
+  //                 <div>3:00 PM | Workshop: Fourths and Fifths with Gabe Noel </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Upright bassist and now "cell-ar" (cello meets guitar) player Gabe Noel has played on countless pop hits by Sombr, Kendrick Lamar, Harry Styles and others. In this workshop, Noel walks us through the magic found in four-stringed (tenor) instruments and how downsizing may just open up your sonic possibilities.
+  //               </div>
+  //             </div>
               
-              <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                  <div>5:00 PM | The 2026 Summit Pinewood Derby </div>
-                </div>
-                <div className="font-semibold">
-                  Szold Hall - East
-                </div>
-                <div className="mt-3">
-                  Each Summit, we close out the festivities with a question: What can some of the world's finest guitarmakers do with a humble Boy Scout pinewood derby car kit? At the Summit Pinewood Derby, we borrow a track from a local troop and see what happens when luthiers get competitive. Wagering encouraged, cold beverages available.
-                </div>
-              </div>
+  //             <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                 <div>5:00 PM | The 2026 Summit Pinewood Derby </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Szold Hall - East
+  //               </div>
+  //               <div className="mt-3">
+  //                 Each Summit, we close out the festivities with a question: What can some of the world's finest guitarmakers do with a humble Boy Scout pinewood derby car kit? At the Summit Pinewood Derby, we borrow a track from a local troop and see what happens when luthiers get competitive. Wagering encouraged, cold beverages available.
+  //               </div>
+  //             </div>
               
 
-               <div className="event">
-                <div className=" font-bold text-lg leading-relaxed">
-                  <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
-                  <div>8:00 PM | The Summit Summit </div>
-                </div>
-                <div className="font-semibold">
-                  Maurer Hall
-                </div>
-                <div className="mt-3">
-                  This year, we're mixing it up and closing out the Summit with a night of instrumental guitar wizards just for all-access passholders. Hear acclaimed artists Twanguero, Shane Parish, Jonathan Stout, Gabe Noel & surprise guests perform just for you. Available only to all-access passholders.
-                </div>
-              </div>
+  //              <div className="event">
+  //               <div className=" font-bold text-lg leading-relaxed">
+  //                 <span className="inline-flex items-center rounded-xl bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Concert</span>
+  //                 <div>8:00 PM | The Summit Summit </div>
+  //               </div>
+  //               <div className="font-semibold">
+  //                 Maurer Hall
+  //               </div>
+  //               <div className="mt-3">
+  //                 This year, we're mixing it up and closing out the Summit with a night of instrumental guitar wizards just for all-access passholders. Hear acclaimed artists Twanguero, Shane Parish, Jonathan Stout, Gabe Noel & surprise guests perform just for you. Available only to all-access passholders.
+  //               </div>
+  //             </div>
 
-              <div className="bg-gray-200 h-2 w-full mt-6"></div>
-            </div>
-            )
-    },
-    { id: "tab5", label: "All Weekend Long", content: (
-            <div className="dayOfWeek tabcontent" id="AllWeek">
+  //             <div className="bg-gray-200 h-2 w-full mt-6"></div>
+  //           </div>
+  //           )
+  //   },
+  //   { id: "tab5", label: "All Weekend Long", content: (
+  //           <div className="dayOfWeek tabcontent" id="AllWeek">
               
-                <h3 className="font-aurochs mt-10 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >All Weekend Long</h3>
+  //               <h3 className="font-aurochs mt-10 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed" >All Weekend Long</h3>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                    <div>The Truth About Vintage Amps Room </div>
-                    <div></div>
-                  </div>
-                  <div className="font-semibold">
-                    E128, East Building
-                  </div>
-                  <div className="mt-3">
-                    Brian McAlister (vintagetubeamplifiers.com) and the community behind Skip Simmons’ Truth About Vintage Amps podcast share some of their favorite tube amp finds for anyone to try out. Come see what the tube fuss is about or just play a guitar you’ve been admiring at full volume.
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                   <div>The Truth About Vintage Amps Room </div>
+  //                   <div></div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   E128, East Building
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Brian McAlister (vintagetubeamplifiers.com) and the community behind Skip Simmons’ Truth About Vintage Amps podcast share some of their favorite tube amp finds for anyone to try out. Come see what the tube fuss is about or just play a guitar you’ve been admiring at full volume.
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                    <div>Vintage Martin & Gibson ID with Greig Hutton </div>
-                  </div>
-                  <div className="font-semibold">
-                    Lobby, West Building
-                  </div>
-                  <div className="mt-3">
-                    Acclaimed Martin historian Greig Hutton will be back with his database of early Martin and Gibson guitar records, helping you learn the history of your instrument. Just bring a serial number or factory order number!
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                   <div>Vintage Martin & Gibson ID with Greig Hutton </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Lobby, West Building
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Acclaimed Martin historian Greig Hutton will be back with his database of early Martin and Gibson guitar records, helping you learn the history of your instrument. Just bring a serial number or factory order number!
+  //                 </div>
+  //               </div>
 
-                <div className="event">
-                  <div className=" font-bold text-lg leading-relaxed">
-                    <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
-                    <div>Free banjo setup by Greg Deering </div>
-                  </div>
-                  <div className="font-semibold">
-                    Deering Booth, E326
-                  </div>
-                  <div className="mt-3">
-                    Deering Banjos' founder, Greg Deering, is offering free banjo setup to any attendee, regardless of make or model! 
-                  </div>
-                </div>
+  //               <div className="event">
+  //                 <div className=" font-bold text-lg leading-relaxed">
+  //                   <span className="inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Activity</span>
+  //                   <div>Free banjo setup by Greg Deering </div>
+  //                 </div>
+  //                 <div className="font-semibold">
+  //                   Deering Booth, E326
+  //                 </div>
+  //                 <div className="mt-3">
+  //                   Deering Banjos' founder, Greg Deering, is offering free banjo setup to any attendee, regardless of make or model! 
+  //                 </div>
+  //               </div>
 
-            </div>
-            )
-    },
-  ];
+  //           </div>
+  //           )
+  //   },
+  // ];
 
-  // const [searchQuery, setSearchQuery] = useState('');
 
-  //  const filteredTabs = tabs.filter((tab) => {
-  //   const text = tab.content?.props.className === "event" || "";
-  //   return text.toLowerCase().includes(searchQuery.toLowerCase());
-  // });
+
+  const DATA = [
+  { date: "Thursday, August 20", day:"Thursday", note:"3-Day Passholders Only · Check-in begins at 10am.", events:[
+    {t:"10:00 AM", title:"Registration / Check-In", loc:"4544 N Lincoln Ave, Chicago", cat:"activity", desc: ""},
+    {t:"12:00 PM", title:"Opening Remarks", loc:"Maurer Hall – West", cat:"activity", desc:"Just for three-day passholders: Old Town School of Folk Music CEO Troy Anderson and Fretboard Journal founder Jason Verlinde welcome you to the 2026 Fretboard Summit. We'll also go over logistics, surprise lineup additions, updates and more."},
+    {t:"1:00 PM", title:"Luthier & Exhibitor Showcase Preview Opens", loc:"Both OTSFM Buildings", cat:"activity", desc:"Exclusive preview of the Summit lutherie showcase just for three-day attendees. Scattered between the Old Town School of Folk Music's two buildings, Summit-goers will find nearly 100 brands and solo builders showcasing the latest in gear, including prototypes and new product launches. You’ll also have ample opportunities to meet some of the legends of the gear industry. Demo/listening rooms are available if you need a quiet space to try things out…or an amp to plug things in."},
+    {t:"1:00 PM", title:"From K&F to CBS: The Real Relics of Fender History", loc:"Maurer Hall – West", cat:"workshop", desc:"Acclaimed guitar historian Terry Foster shows rare and unseen items from his collection that helped shape the future of electric guitar. Presentation followed by Q&A."},
+    {t:"1:00 PM", title:"Jens Kruger", loc:"Szold Hall – East", cat:"workshop", desc:"Bluegrass hero Jens Kruger teaches banjo for guitar players! Whether you already play or are just banjo curious, learn the magic of the 5-string from this former recipient of the Steve Martin Prize for Excellence in Banjo and Bluegrass."},
+    {t:"2:00 PM", title:"Fats Kaplin", loc:"Szold Hall – East", cat:"workshop", desc:'Acclaimed Nashville musician Fats Kaplin will discuss the instruments, techniques, and musical traditions he has spent a lifetime studying and using on stage and in the studio with artists ranging from John Prine and Mitski to Jack White and the Dead Reckoners. A singular multi-instrumentalist on fiddle, banjo, guitar, ukulele, mandolin, steel guitar and more, Fats has followed an intriguing path through music: years on the road with Roy Book Binder, a long stretch touring the world with Tom Russell, and eventually landing in Nashville, where he has become one of the city’s most respected and in-demand players. \nIn this session, Fats demonstrate some of the techniques and sounds that have shaped his playing, and dig into the music that continues to fuel his desire to learn, create, and keep pushing forward.'},
+    {t:"3:00 PM", title:"3:00 PM | Twenty-One Years of the Fretboard Journal: Live Podcast Taping", loc:"Maurer Hall – West", cat:"workshop", desc:"What does it take to sustain an independent magazine for two decades? Fretboard Journal founder Jason Verlinde sits down with the one person who has seen it all - his wife! - for a behind-the-scenes conversation about the people, stories, and instincts that shaped the publication, and what still drives him today. Audience Q&A to follow."},
+    {t:"3:00 PM", title:"Jazz Duos with Andy Reiss and Jonathan Stout", loc:"Szold Hall – East", cat:"workshop", desc:"Returning Fretboard Summit performer Jonathan Stout is joined by Andy Reiss (Volcano Brothers) for a midday jazz performance."},
+    {t:"4:00 PM", title:"The Working Guitarist's Journey", loc:"Maurer Hall – West", cat:"workshop", desc:"Corey Congilio talks about his journey as a pro guitarist and the realities of being a working musician in 2026. He'll discuss the gear that he depends on and how to build a skill set so that one can adapt to any instrument that they are presented with."},
+    {t:"4:00 PM", title:"Vintage Gibson Acoustics Petting Zoo", loc:"Szold Hall – East", cat:"workshop", desc:"Mark Stutman is the expert on the Gibson L-style acoustic guitar. In this Summit session, he walks us through the quirks and magic found in these instruments. In this hands-on session, participants will also have a rare opportunity to play over a dozen Gibson, Kel Kroydon and other Gibson offshoot instruments from the 1930s."},
+    {t:"4:00 PM", title:"Hands-On Class: Build a Pedal with Summer School's Mark Turley", loc:"B-4, West", cat:"workshop", desc:"Never touched a soldering iron? Not a problem! Summer School Electronics’ founder Mark Turley leads a beginner-friendly class where each participant will build their very own drive pedal. Note: Due to materials cost, a separate admission is required."},
+    {t:"5:00 PM", title:"Happy Hour Hangout with William Downie Pinot Noir", loc:"Szold Hall – East", cat:"activity", desc:"Meet fellow 3-day pass holders and Summit exhibitors at a complimentary wine tasting courtesy of Australia’s William Downie Pinot Noir. Additional beverages are available."},
+    {t:"8:00 PM", title:"Jake Xerxes Fussell • Cameron Knowler", loc:"Maurer Hall", cat:"concert", desc: "North Carolina-based Jake Xerxes Fussell is a singer-songwriter known for crafting original (and mesmerizing) interpretations of traditional Southern folk and blues. This performance, taking place just a few weeks before his next release on Fat Possum Records, will be unforgettable. Opening the show is Rural Guitars' Cameron Knowler, whose own instrumental music is steeped in the playing of Norman Blake and other Americana legends."},
+    {t:"8:00 PM", title:"The Volcano Brothers", loc:"Szold Hall", cat:"concert", desc:"Jazz-fueled Hawaiian music of the 1920s and ‘30s as channeled through Nashville’s Steve Dawson, Fats Kaplin, Richard Bennett, Dave Jacques, and Andy Reiss."}
+  ]},
+  { date: "Friday, August 21", day:"Friday", note:"Check-in begins at 9:30am.", events:[
+    {t:"8:00 AM", title:"The Fretboard Summit 5k!", loc:"Route emailed to passholders", cat:"activity", desc:"Get up early and put your trainers on for a fun run with a few demented guitar fanatics who also like to jog in circles. Route to be emailed to passholders, weather permitting."},
+    {t:"10:00 AM", title:"Luthier & Exhibitor Showcase", loc:"Both OTSFM Buildings", cat:"activity", desc:"The Fretboard Summit features one of the finest collections of handmade, high-end and boutique gear under one roof. Peruse both Old Town School buildings to demo and shop for gear from nearly 100 luthiers, brands, and gear makers. Can't make the rest of the Summit activities? We'll have Lutherie Showcase-only tickets available at the door on Friday and Saturday for those who just want to shop guitars."},
+    {t:"10:00 AM", title:"Josh Scott's Can You Hear It?", loc:"Maurer Hall – West", cat:"workshop", desc:"How well do you really know the sound of your favorite pedal? JHS founder Josh Scott will test players with the ultimate Pepsi challenge from the Summit's mainstage. Expect surprises, some deep effects pedal history and plenty of laughs."},
+    {t:"10:00 AM", title:"The Many Faces of Modern Lap-Style Guitar with Steve Dawson", loc:"Szold Hall – East", cat:"workshop", desc:"Steve Dawson has been working in studios and on stage for years as a guitarist in many forms, but the steel guitar has always been his focus. Whether that’s solo gigs on Weissenborn, trad Hawaiian tricone with the Volcano Brothers, overdriven modern sounds on an Asher electro, Jerry Byrd-inspired retro lap steel, or pedal steel, Dawson has always found ways to keep interested in developing as a player and working musician. He'll do an interactive workshop where he plays a bit of those various styles, talks about tone, tunings and technique."},
+    {t:"11:00 AM", title:"Dipped in Tone Podcast Live Podcast Taping", loc:"Maurer Hall – West", cat:"workshop", desc:"Join Rhett Shull, Zach Broyles (Mythos Pedals) and Addison Sauvan for a rare, live taping of their hit podcast. Expect hot takes on industry news, favorite gear, and more."},
+    {t:"11:00 AM", title:"In Conversation: Richard Bennett", loc:"Szold Hall – East", cat:"workshop", desc:"Richard Bennett is one of Nashville's most respected guitarists. In this session, he sits down with the Fretboard Journal to discuss decades of playing and performing with the likes of Mark Knopfler, Neil Diamond, Steve Earle, Emmylou Harris, and countless others. We'll talk gear, inspiration, memorable sessions and more."},
+    {t:"1:00 PM", title:"Featured Speaker: Chris Martin IV (Martin Guitars)", loc:"Maurer Hall – West", cat:"workshop", desc:"Experience an intimate talk with Chris Martin IV, the 6th-generation owner of the iconic guitar manufacturer, C.F. Martin & Co., as he shares his passion and stories from his over 35 years at the helm of the company. Founded in 1833 in New York City, Martin Guitar has been crafting the world’s finest acoustic guitars for nearly 200 years."},
+    {t:"1:00 PM", title:"Rare & Vintage Pedals with Chris Vincent (R2R Electric)", loc:"Szold Hall – East", cat:"workshop", desc:"Returning Fretboard Summit guest Chris Vincent and Meg Duffy (Hand Habits) walk us through some of the rarest and most unobtanium pedals they cherish, including a few that have their origins in Chicago."},
+    {t:"2:00 PM", title:"The Fretboard Summit Science Fair", loc:"Szold Hall – East", cat:"activity", desc:"Every year, we carve out an hour at the Summit to showcase the weekend's gear-making pioneers, experimenters and oddballs. It's an old-school Science Fair patterned after the one you had in Junior High, just for guitar geeks. Any exhibitors or attendees are welcome to bring their creations. Expect some jaw-dropping and some laughs."},
+    {t:"3:00 PM", title:"Pedal Party Clinic with Jessica Dobson of Deep Sea Diver", loc:"Maurer Hall – West", cat:"workshop", desc:"Dive into the sonic universe of Deep Sea Diver with an exclusive, behind-the-scenes session led by bandleader and multi-instrumentalist Jessica Dobson. In this dynamic presentation and Q&A, Jessica will explore how guitar textures, tone shaping, and creative effects work together to build entire musical worlds in both songwriting and production. Whether you’re a gear enthusiast, a songwriter, or simply a fan of Deep Sea Diver’s signature sound, join us to uncover the artistry behind their pedal choices, sonic landscapes, and the creative decisions that bring their music to life."},
+    {t:"3:00 PM", title:"Workshop: Right-Hand Technique with Jacob Jolliff", loc:"Szold Hall – East", cat:"workshop", desc:"Acclaimed mandolin player Jolliff shares techniques and life hacks that have improved his playing. Great for mandolin players, guitarists or anyone who wants to up their game."},
+    {t:"3:00 PM", title:"The Hole Truth with Luthier Raymond Kraut", loc:"Wood & Wire booth - West 213", cat:"workshop", desc:"Inventive acoustic guitar maker Raymond Kraut shares insights into the world of offset, square and non-traditional soundholes, plus other lutherie developments"},
+    {t:"4:00 PM", title:"Guitar Collecting Roundtable", loc:"Maurer Hall – West", cat:"workshop", desc:"Join The Music Emporium, Mass Street Guitars, and Gearcheck for a deep chat about the perils and joys of amassing a growing guitar collection."},
+    {t:"4:00 PM", title:"Workshop: Solo Fingerstyle with Shane Parish", loc:"Szold Hall – East", cat:"workshop", desc:"Shane Parish will discuss his process for arranging music from various idioms--jazz, folk, electronica, rock, etc.- for solo fingerstyle guitar. The conversation will touch on ideas about transcription, adaptation, counterpoint, alternate tunings, notation, interpretation, timbre, practice, technique, mechanics, analysis, improvisation, and more! Specific examples from his records Autechre Guitar, Repertoire, and Solo at Cafe OTO, will be cited. Questions and suggestions encouraged."},
+    {t:"4:00 PM", title:"Build a Pedal with Summer School's Mark Turley (Intermediate Level)", loc:"B-4, West", cat:"workshop", desc:"For those who attended last year’s Summer School class: Here’s your graduate school! Summer School Electronics’ founder Mark Turley leads an intermediate class, where each participant will build their very own pedal. Note: Due to materials cost, a separate admission is required."},
+    {t:"8:00 PM", title:"Deep Sea Diver (Solo) • Hand Habits", loc:"Maurer Hall", cat:"concert", desc:"An incredible night of music with two of the most forward-thinking indie rock artists of today: Deep Sea Diver's Jessica Dobson will play a rare solo set of music alongside Hand Habits, the alter ego of Meg Duffy, a guitarist who has played alongside the War on Drugs, Perfume Genius, Kevin Morby and others. Both artists will also be doing workshop sessions during the Summit."},
+    {t:"8:00 PM", title:"Michael Daves & Jacob Jolliff", loc:"Szold Hall", cat:"concert", desc: "Into bluegrass? We have you covered! Guitarist Michael Daves and mandolin wizard Jacob Jolliff will perform music from their latest record, We Like Jim & Jesse!, as well as other bluegrass favorites. Daves is a frequent collaborator with Chris Thile, while Jolliff has played with Joy Kills Sorry, Yonder Mountain String Band, and with his own band. Opening is another stellar mandolin/guitar duo: Frank Solivan and Jack Dunlap from the band Frank Solivan & Dirty Kitchen."}
+  ]},
+  { date: "Saturday, August 22", day:"Saturday", note:"Check-in begins at 8:30am.", events:[
+    {t:"9:00 AM", title:"Bob Taylor: Sustainability and the Future of Guitar Woods", loc:"Maurer Hall – West", cat:"workshop", desc:"The sustainability efforts of Taylor Guitars co-founder Bob Taylor are the stuff of legend. In this extended session, Bob will do a tell-all for guitar lovers, fellow luthiers and industry leaders on the state of affairs of tonewoods, the legislation and permitting that may affect them down the road and how they can make change. Please Note: We're starting this session early (9-10:30am) so all exhibitors can attend before the show opens."},
+    {t:"9:00 AM", title:"Teach Your Children (How a Guitar is Built) – NO PASS REQUIRED, KIDS WELCOME", loc:"Szold Hall – East", cat:"activity", desc:"Geared toward kids but open to anyone curious, this workshop aims to demystify the guitar-building process. This is your chance to hear from some experts and then try your hand with the techniques, tools, and materials needed to build a guitar. Barry Grzebik (Grez Guitars), Wade Black (3Bender), Shelby Pollard (Black Bobbin), Benny Monson (Lockhorn Instruments), and Stephen Harrison (educator and hobbyist builder) will share their experiences, answer all your guitar questions, and guide you through some guitar building basics."},
+    {t:"10:00 AM", title:"Luthier & Exhibitor Showcase", loc:"Both OTSFM Buildings", cat:"activity", desc:"The Fretboard Summit features one of the finest collections of handmade, high-end and boutique gear under one roof. Peruse both Old Town School buildings to demo and shop for gear from nearly 100 luthiers, brands, and gear makers. Can't make the rest of the Summit activities? We'll have Lutherie Showcase-only tickets available at the door on Friday and Saturday for those who just want to shop guitars."},
+    {t:"10:30 AM", title:"History: Martin Mystery Tops with Greig Hutton", loc:"Maurer Hall – West", cat:"workshop", desc:"Two of the world’s foremost experts – TJ Thompson and Greig Hutton – demystify one of the great mysteries of Martin collectors: The \u201cmystery tops.\u201d of 1953 and 1957. It’s a deep dive into arcane guitar history, top woods, what matters and what doesn’t."},
+    {t:"11:00 AM", title:"Songwriting 201 with Sofia Wolfson", loc:"Szold Hall – East", cat:"workshop", desc:"For this year’s Summit, the Fretboard Journal's Sofia Wolfson hosts a brand new songwriting class. She will be focusing on lyrical content and using the guitar as a dynamic vehicle for writing songs. There will also be time for a few students to receive live feedback on their own material."},
+    {t:"1:00 PM", title:"Evan Gluck's Guitar Repair Panel", loc:"Maurer Hall – West", cat:"workshop", desc:"Join Evan Gluck (NY Guitar Repair), TJ Thompson, Mark Stutman, Jonathan Scott and James Roadman for a lively session on all things guitar repair. Evan wanted us to call this \u201cBetween Two Nibs\u201c so expect some laughs between all the hide glue talk."},
+    {t:"1:00 PM", title:"Masterclass: The Guitar Styles of Norman Blake with Michael Daves", loc:"Szold Hall – East", cat:"workshop", desc:"Bluegrass musician and historian Michael Daves walks participants through the singular guitar playing of Norman Blake. Included will be a deep dive featuring little-known facts about Blake's famed Sulfur Springs record and the gear that was used."},
+    {t:"2:00 PM", title:"Guitar Design with Grez", loc:"Maurer Hall – West", cat:"workshop", desc:"California-based boutique builder Barry Grzebik walks us through his design process, a strategy based on data, creativity, art and guts."},
+    {t:"2:00 PM", title:"Workshop: Recording Acoustic and Electric Guitars in a Digital Age", loc:"Szold Hall – East", cat:"workshop", desc:"LA-based studio owner and guitarist Eric Garcia (48 Windows) discusses amps, mics, processing gear, A/D converters, and more in this recording session deep dive."},
+    {t:"3:00 PM", title:"World Premiere: JHS's Electro-Harmonix Documentary", loc:"Maurer Hall – West", cat:"activity", desc:"On the heels of his new book, Made On Earth for Rising Stars: The Electro-Harmonix Story, Josh Scott shares the documentary he made on the project on the Summit's big screen. A Q&A will follow."},
+    {t:"3:00 PM", title:"Workshop: Fourths and Fifths with Gabe Noel", loc:"Szold Hall – East", cat:"workshop", desc:"Upright bassist and now \u201ccell-ar\u201c (cello meets guitar) player Gabe Noel has played on countless pop hits by Sombr, Kendrick Lamar, Harry Styles and others. In this workshop, Noel walks us through the magic found in four-stringed (tenor) instruments and how downsizing may just open up your sonic possibilities."},
+    {t:"5:00 PM", title:"The 2026 Summit Pinewood Derby", loc:"Szold Hall – East", cat:"activity", desc:"Each Summit, we close out the festivities with a question: What can some of the world's finest guitarmakers do with a humble Boy Scout pinewood derby car kit? At the Summit Pinewood Derby, we borrow a track from a local troop and see what happens when luthiers get competitive. Wagering encouraged, cold beverages available."},
+    {t:"8:00 PM", title:"The Summit Summit", loc:"Maurer Hall", cat:"concert", desc:"This year, we're mixing it up and closing out the Summit with a night of instrumental guitar wizards just for all-access passholders. Hear acclaimed artists Twanguero, Shane Parish, Jonathan Stout, Gabe Noel & surprise guests perform just for you. Available only to all-access passholders."}
+  ]},
+  { date: "All Weekend Long", day:"All Weekend", note:"", events:[
+    {t:"All weekend", title:"The Truth About Vintage Amps Room", loc:"E128, East Building", cat:"activity", desc:"Brian McAlister (vintagetubeamplifiers.com) and the community behind Skip Simmons’ Truth About Vintage Amps podcast share some of their favorite tube amp finds for anyone to try out. Come see what the tube fuss is about or just play a guitar you’ve been admiring at full volume."},
+    {t:"All weekend", title:"Vintage Martin & Gibson ID with Greig Hutton", loc:"Lobby, West Building", cat:"activity", desc:"Acclaimed Martin historian Greig Hutton will be back with his database of early Martin and Gibson guitar records, helping you learn the history of your instrument. Just bring a serial number or factory order number!"},
+    {t:"All weekend", title:"Free banjo setup by Greg Deering", loc:"Deering Booth, E326", cat:"activity", desc:"Deering Banjos' founder, Greg Deering, is offering free banjo setup to any attendee, regardless of make or model!"}
+  ]}
+];
+
+ const [isExpanded, setIsExpanded] = useState(false);
+ const [activeDay, setActiveDay] = useState("Thursday");
+ const [selectedCategories, setSelectedCategories] = useState([]);
+
+  // Find data for the active day
+  const currentDayData = DATA.find(d => d.day === activeDay);
+  const events = currentDayData ? currentDayData.events : [];
+
+  // Get unique categories without duplicates
+  const allCategories = [...new Set(events?.map(e => e.cat).sort())];
+
+  // Handle checkbox toggle
+  const toggleCategory = (cat) => {
+    setSelectedCategories(prev =>
+      prev.includes(cat) ? prev.filter(c => c !== cat) : [...prev, cat]
+    );
+  };
+
+  const toggleField = (fieldKey) => {
+    // setIsExpanded((prev) => ({
+    //   ...prev,
+    //   [fieldKey]: !prev[fieldKey],
+    // }));
+    setIsExpanded(isExpanded === fieldKey ? null : fieldKey);
+  };
+
+   // Filter events based on selected categories
+  const filteredEvents = selectedCategories.length === 0
+    ? events
+    : events.filter(e => selectedCategories.includes(e.cat));
+
 
   // const openDay = (evt, dayName) => {
   //   var i, tabcontent, tablinks;
@@ -890,26 +975,7 @@ export default function Schedule() {
 
           {/* <input className="w-full my-4 p-2 text-gray-900" type="search" id="tableSearch" placeholder="Type to search Schedule..."></input> */}
 
-          {/* <input
-            type="text"
-            placeholder="Search items..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          /> */}
-
-           {/* <div>
-            {filteredTabs.length > 0 ? (
-              filteredTabs.map((tab, index) => (
-                <div key={index}>
-                  <h3>{tab.label}</h3>
-                  {tab.content}
-                </div>
-              ))
-            ) : (
-              <p>No matching content found.</p>
-            )}
-          </div> */}
-
+        
 
           
             <p className="italic text-xs text-gray-900 leading-relaxed">Updated: August 12, 2026</p>
@@ -922,7 +988,75 @@ export default function Schedule() {
               <p className="italic text-sm" >Note: Summit workshops, clinics, interviews and concerts are available to All-Access Passholders only. Just want to guitar shop? We’ll have day Exhibitor Showcase tickets at the door for Friday and Saturday. </p>
             </div>
 
-          <div className="mt-6 tab-buttons flex justify-center tabs gap-2 mb-4" id="tabs">
+            <div>
+              <div className="mt-6 tab-buttons flex justify-center tabs gap-2 mb-4" id="tabs">
+                {DATA.map(d => (
+                  <button
+                    className={`font-semibold uppercase tab-btn ${activeDay === d.day ? "active" : ""} tablinks border border-black hover:bg-[#4DB3AC] py-2 px-4 tab`}
+                    key={d.day}
+                    onClick={() => {
+                      setActiveDay(d.day);
+                      setSelectedCategories([]);
+                    }}
+                  >
+                    {d.day}
+                  </button>
+                ))}
+              </div>
+
+              <div className="mt-6 tab-buttons flex justify-center tabs gap-2 mb-4">
+                <h4>Filter by Category:</h4>
+                {allCategories.length > 1 && allCategories.map(cat => (
+                  <label key={cat} className="flex items-center capitalize mr-2 font-semibold">
+                    <input
+                      className="mr-1"
+                      type="checkbox"
+                      checked={selectedCategories.includes(cat)}
+                      onChange={() => toggleCategory(cat)}
+                    />
+                    {cat}
+                  </label>
+                ))}
+              </div>
+
+              {DATA.map(d => (
+                  <div key={d.day} className={`font-semibold uppercase ${activeDay === d.day ? "" : "hidden"}  py-2 px-4`}>
+                    <h3 class="mt-2 font-aurochs uppercase text-3xl sm:text-4xl">{d.date}</h3>
+                    <p class="italic my-2  text-base">{d.note}</p>
+                  </div>
+                ))}
+
+
+              {filteredEvents?.map((event, index) => (
+                <div className="event" key={index}>
+                    <span className={`capitalize inline-flex items-center rounded-xl bg-blue-50 px-2 py-1 text-xs font-medium ring-1 ring-inset ${event.cat === 'activity' ? 'text-blue-700 ring-blue-700/10' : event.cat === 'workshop' ? 'text-red-700 ring-red-700/10' : 'text-green-700 ring-green-700/1' }`}>{event.cat}</span>
+                    <div className=" font-bold text-lg leading-relaxed">
+                      <div>{event.t} | {event.title} </div>
+                    </div>
+                    <div className="font-semibold">
+                      {event.loc}
+                    </div>
+                    {event.desc !== "" &&(
+                    <div className="mt-3" style={{ whiteSpace: 'pre-line' }}>
+                      {/* {event.desc} */}
+                      {isExpanded === index ? event.desc : `${event.desc?.substring(0, 150)}...`}
+                      <button 
+                        className="ml-2 text-blue-700"
+                        key={index}
+                        // onClick={() => setIsExpanded(!isExpanded)}
+                        onClick={() =>toggleField(index)}
+                      >
+                        {isExpanded === index ? '[Read Less]' : '[Read More]' }
+                      </button>
+                    </div>
+                    )}
+                  </div>
+              ))}
+            </div>
+
+
+
+          {/* <div className="mt-6 tab-buttons flex justify-center tabs gap-2 mb-4" id="tabs">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -932,7 +1066,7 @@ export default function Schedule() {
                 {tab.label}
               </button>
             ))}
-          </div>
+          </div> */}
 
 
           {/* new */}
@@ -950,16 +1084,16 @@ export default function Schedule() {
 
           
 
-          <div id="dataTable">
+          {/* <div id="dataTable"> */}
             
 
 
             {/* Tab Content Panel */}
-            <div className="tab-content">
+            {/* <div className="tab-content">
               {tabs.map((tab) => 
-                (activeTab === tab.id || activeTab === 'all') && <div key={tab.id}>{tab.content}</div>
+                (activeTab === tab.id || activeTab === "all") && <div key={tab.id}>{tab.content}</div>
               )}
-            </div>
+            </div> */}
 
             {/* new */}
             {/* <div className="tab-content">
@@ -1291,7 +1425,7 @@ export default function Schedule() {
             
             
 
-          </div>
+          {/* </div> */}
         </div> 
 
       </main>
