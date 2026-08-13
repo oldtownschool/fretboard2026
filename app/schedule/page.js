@@ -727,7 +727,7 @@ export default function Schedule() {
     {t:"3:00 PM", title:"Jazz Duos with Andy Reiss and Jonathan Stout", loc:"Szold Hall – East", cat:"workshop", desc:"Returning Fretboard Summit performer Jonathan Stout is joined by Andy Reiss (Volcano Brothers) for a midday jazz performance."},
     {t:"4:00 PM", title:"The Working Guitarist's Journey", loc:"Maurer Hall – West", cat:"workshop", desc:"Corey Congilio talks about his journey as a pro guitarist and the realities of being a working musician in 2026. He'll discuss the gear that he depends on and how to build a skill set so that one can adapt to any instrument that they are presented with."},
     {t:"4:00 PM", title:"Vintage Gibson Acoustics Petting Zoo", loc:"Szold Hall – East", cat:"workshop", desc:"Mark Stutman is the expert on the Gibson L-style acoustic guitar. In this Summit session, he walks us through the quirks and magic found in these instruments. In this hands-on session, participants will also have a rare opportunity to play over a dozen Gibson, Kel Kroydon and other Gibson offshoot instruments from the 1930s."},
-    {t:"4:00 PM", title:"Hands-On Class: Build a Pedal with Summer School's Mark Turley", loc:"B-4, West", cat:"workshop", desc:"Never touched a soldering iron? Not a problem! Summer School Electronics’ founder Mark Turley leads a beginner-friendly class where each participant will build their very own drive pedal. Note: Due to materials cost, a separate admission is required."},
+    {t:"4:00 PM", title:"Hands-On Class: Build a Pedal with Summer School's Mark Turley", loc:"B-4, West", cat:"workshop", desc:"Never touched a soldering iron? Not a problem! Summer School Electronics’ founder Mark Turley leads a beginner-friendly class where each participant will build their very own drive pedal. Note: Due to materials cost, a separate admission is required.", linkSrc: "https://www.summerschoolelectronics.com/shop/p/fretboard-summit-pedal-building-class-amnk8", linkText: "Reserve your spot here"},
     {t:"5:00 PM", title:"Happy Hour Hangout with William Downie Pinot Noir", loc:"Szold Hall – East", cat:"activity", desc:"Meet fellow 3-day pass holders and Summit exhibitors at a complimentary wine tasting courtesy of Australia’s William Downie Pinot Noir. Additional beverages are available."},
     {t:"8:00 PM", title:"Jake Xerxes Fussell • Cameron Knowler", loc:"Maurer Hall", cat:"concert", desc: "North Carolina-based Jake Xerxes Fussell is a singer-songwriter known for crafting original (and mesmerizing) interpretations of traditional Southern folk and blues. This performance, taking place just a few weeks before his next release on Fat Possum Records, will be unforgettable. Opening the show is Rural Guitars' Cameron Knowler, whose own instrumental music is steeped in the playing of Norman Blake and other Americana legends."},
     {t:"8:00 PM", title:"The Volcano Brothers", loc:"Szold Hall", cat:"concert", desc:"Jazz-fueled Hawaiian music of the 1920s and ‘30s as channeled through Nashville’s Steve Dawson, Fats Kaplin, Richard Bennett, Dave Jacques, and Andy Reiss."}
@@ -747,7 +747,7 @@ export default function Schedule() {
     {t:"3:00 PM", title:"The Hole Truth with Luthier Raymond Kraut", loc:"Wood & Wire booth - West 213", cat:"workshop", desc:"Inventive acoustic guitar maker Raymond Kraut shares insights into the world of offset, square and non-traditional soundholes, plus other lutherie developments"},
     {t:"4:00 PM", title:"Guitar Collecting Roundtable", loc:"Maurer Hall – West", cat:"workshop", desc:"Join The Music Emporium, Mass Street Guitars, and Gearcheck for a deep chat about the perils and joys of amassing a growing guitar collection."},
     {t:"4:00 PM", title:"Workshop: Solo Fingerstyle with Shane Parish", loc:"Szold Hall – East", cat:"workshop", desc:"Shane Parish will discuss his process for arranging music from various idioms--jazz, folk, electronica, rock, etc.- for solo fingerstyle guitar. The conversation will touch on ideas about transcription, adaptation, counterpoint, alternate tunings, notation, interpretation, timbre, practice, technique, mechanics, analysis, improvisation, and more! Specific examples from his records Autechre Guitar, Repertoire, and Solo at Cafe OTO, will be cited. Questions and suggestions encouraged."},
-    {t:"4:00 PM", title:"Build a Pedal with Summer School's Mark Turley (Intermediate Level)", loc:"B-4, West", cat:"workshop", desc:"For those who attended last year’s Summer School class: Here’s your graduate school! Summer School Electronics’ founder Mark Turley leads an intermediate class, where each participant will build their very own pedal. Note: Due to materials cost, a separate admission is required."},
+    {t:"4:00 PM", title:"Build a Pedal with Summer School's Mark Turley (Intermediate Level)", loc:"B-4, West", cat:"workshop", desc:"For those who attended last year’s Summer School class: Here’s your graduate school! Summer School Electronics’ founder Mark Turley leads an intermediate class, where each participant will build their very own pedal. Note: Due to materials cost, a separate admission is required.", linkSrc: "https://www.summerschoolelectronics.com/shop/p/fretboard-summit-pedal-building-class-amnk8", linkText: "Reserve your spot here"},
     {t:"8:00 PM", title:"Deep Sea Diver (Solo) • Hand Habits", loc:"Maurer Hall", cat:"concert", desc:"An incredible night of music with two of the most forward-thinking indie rock artists of today: Deep Sea Diver's Jessica Dobson will play a rare solo set of music alongside Hand Habits, the alter ego of Meg Duffy, a guitarist who has played alongside the War on Drugs, Perfume Genius, Kevin Morby and others. Both artists will also be doing workshop sessions during the Summit."},
     {t:"8:00 PM", title:"Michael Daves & Jacob Jolliff", loc:"Szold Hall", cat:"concert", desc: "Into bluegrass? We have you covered! Guitarist Michael Daves and mandolin wizard Jacob Jolliff will perform music from their latest record, We Like Jim & Jesse!, as well as other bluegrass favorites. Daves is a frequent collaborator with Chris Thile, while Jolliff has played with Joy Kills Sorry, Yonder Mountain String Band, and with his own band. Opening is another stellar mandolin/guitar duo: Frank Solivan and Jack Dunlap from the band Frank Solivan & Dirty Kitchen."}
   ]},
@@ -1021,8 +1021,8 @@ export default function Schedule() {
 
               {DATA.map(d => (
                   <div key={d.day} className={`font-semibold uppercase ${activeDay === d.day ? "" : "hidden"}  py-2 px-4`}>
-                    <h3 class="mt-2 font-aurochs uppercase text-3xl sm:text-4xl">{d.date}</h3>
-                    <p class="italic my-2  text-base">{d.note}</p>
+                    <h3 className="mt-2 font-aurochs uppercase text-3xl sm:text-4xl">{d.date}</h3>
+                    <p className="italic my-2  text-base">{d.note}</p>
                   </div>
                 ))}
 
@@ -1040,6 +1040,7 @@ export default function Schedule() {
                     <div className="mt-3" style={{ whiteSpace: 'pre-line' }}>
                       {/* {event.desc} */}
                       {isExpanded === index ? event.desc : `${event.desc?.substring(0, 150)}...`}
+                      
                       <button 
                         className="ml-2 text-blue-700"
                         key={index}
@@ -1048,6 +1049,16 @@ export default function Schedule() {
                       >
                         {isExpanded === index ? '[Read Less]' : '[Read More]' }
                       </button>
+                      
+                      {event.linkText && (
+                      <p className="mt-3">
+                        <a href={event.linkSrc} className="text-center my-10">
+                          <button className="tracking-wider text-xl font-aurochs px-2 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
+                          {event.linkText}
+                          </button>
+                        </a>
+                      </p>
+                      )}
                     </div>
                     )}
                   </div>
