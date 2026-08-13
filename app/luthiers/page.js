@@ -279,7 +279,7 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="https://www.darcyguitars.com/">D&apos;Arcy Guitars</Link></td>
                 <td>Archtop Guitars</td>
-                <td>E326</td>
+                <td>E324</td>
               </tr>
               <tr>
                 <td><Link href="https://dammanninstruments.com/">Dammann Instruments</Link></td>
@@ -380,7 +380,7 @@ export default function Luthiers() {
                 <td>E320</td>
               </tr>
               <tr>
-                <td><Link href="http://holcombguitars.com/">Holcolmb Guitars</Link></td>
+                <td><Link href="http://holcombguitars.com/">Holcomb Guitars</Link></td>
                 <td>Electrics</td>
                 <td>E326</td>
               </tr>
