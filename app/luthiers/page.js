@@ -626,7 +626,7 @@ export default function Luthiers() {
               <tr>
                 <td><Link href="https://www.ruralguitar.com/">Rural Guitar</Link></td>
                 <td>Literary press</td>
-                <td>West Lobby</td>
+                <td>E326</td>
               </tr>            
               {/* <tr>
                 <td><Link href="https://www.ryansukes.com/">Ryan’s Ukes</Link></td>
@@ -673,6 +673,12 @@ export default function Luthiers() {
                 <td>Acoustics</td>
                 <td>102</td>
               </tr>
+              <tr>
+                <td>Soirée Gifts and Embroidery</td>
+                <td>Textiles</td>
+                <td>West Lobby</td>
+              </tr>
+              
               <tr>
                 <td><Link href="https://www.stehrguitars.com/">Stehr Guitars</Link></td>
                 <td>Acoustics</td>

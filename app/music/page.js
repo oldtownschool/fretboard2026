@@ -58,9 +58,9 @@ export default function Music() {
           <p className="font-bold text-2xl mt-6 text-[#F0E5D1]">
           Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Cameron Knowler, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers (featuring Steve Dawson, Fats Kaplin, Richard Bennett, Andy Reiss, & Dave Jacques), fingerstyle great Shane Parish and much more.
           </p>
-          <p className="font-bold text-base mt-6 text-[#F0E5D1]">
+          {/* <p className="font-bold text-base mt-6 text-[#F0E5D1]">
           Full Concert Schedule & Bios coming soon!
-          </p>
+          </p> */}
           <p className="text-center my-10">
             <a href="/tickets">
               <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
@@ -308,13 +308,16 @@ export default function Music() {
           {/* <p className="mt-4">Acclaimed guitarists Charlie Hunter and Ella Feingold perform from their new duo album, &apos;Different Strokes for Different Folks.&apos; This exploratory duo project is a deep dive into the art of musical conversation. Built on a foundation of rhythm, space, and groove, Hunter and Feingold engage in a fluid, improvisational exchange, pushing beyond conventional structures to create something raw, immediate, and deeply immersive. Their interplay unfolds like a dialogue—organic, unpredictable, and rich with nuance—where silence holds as much weight as sound.</p> */}
 
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Jake Xerxes Fussell (Thursday 8pm - Maurer Hall)</h3>
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Jake Xerxes Fussell </h3>
+          <p className="font-semibold">(Thursday 8pm - Maurer Hall)</p>
           <p className="mt-4">North Carolina-based Jake Xerxes Fussell is a singer-songwriter known for crafting original (and mesmerizing) interpretations of traditional Southern folk and blues. Look for his latest album, The Old Beloved Path, out September 18th on Fat Possum Records.</p>
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Cameron Knowler (Thursday 8pm - Maurer Hall)</h3>
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Cameron Knowler</h3>
+          <p className="font-semibold">(Thursday 8pm - Maurer Hall)</p>
           <p className="mt-4">Cameron Knowler is an instrumental guitarist and music historian based in Nashville, Tennessee. His music is equally influenced by the playing of Norman Blake and other Americana legends, with atmospheric touches that evoke Cameron's Southwest roots.</p>
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">The Volcano Brothers (Thursday 8pm - Szold Hall)</h3>
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">The Volcano Brothers </h3>
+          <p className="font-semibold">(Thursday 8pm - Szold Hall)</p>
           <p className="mt-4">This year’s Summit features a debut Chicago appearance by the Volcano Brothers, a veritable Nashville supergroup. Hear session aces Steve Dawson, Fats Kaplin, Richard Bennett, Dave Jacques, and Andy Reiss give their take on jazz-fueled Hawaiian music of the 1920s and ‘30s. </p>
 
 
@@ -333,16 +336,20 @@ export default function Music() {
           <h4 className="tracking-wide font-aurochs text-3xl mt-6">Friday, August 21</h4>
 
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Deep Sea Diver Solo (Friday 8pm - Maurer Hall )</h3>
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Deep Sea Diver Solo </h3>
+          <p className="font-semibold">(Friday 8pm - Maurer Hall )</p>
 <p className="mt-4">Deep Sea Diver's Jessica Dobson is a modern-day guitar hero. Before starting Deep Sea Diver, Dobson performed in the Shins, and for Beck, Conor Oberst, Spoon and the Yeah Yeah Yeahs. In addition to performing, Dobson will be leading an all-access session on how pedals shape her songwriting.</p>
 
-<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Hand Habits (Friday 8pm - Maurer Hall)</h3>
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Hand Habits </h3>
+<p className="font-semibold">(Friday 8pm - Maurer Hall)</p>
 <p className="mt-4">Hand Habits is the alter ego of Meg Duffy, a guitarist who has played alongside the War on Drugs, Perfume Genius, Kevin Morby and others. Meg’s inventive use of pedals, great playing and stellar vocals has made them one of the most in-demand LA session artists today. </p>
 
-<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Michael Daves & Jacob Jolliff (Friday 8pm - Szold Hall)</h3>
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Michael Daves & Jacob Jolliff </h3>
+<p className="font-semibold">(Friday 8pm - Szold Hall)</p>
 <p className="mt-4">Guitarist Michael Daves and mandolin player Jacob Jolliff are two of the most energetic bluegrass players performing today. Their latest record, We Like Jim & Jesse!, celebrates the inventive music of Jim and Jesse McReynolds, but both of these musicians are true scholars of bluegrass. Daves is a frequent collaborator with Chris Thile, while Jolliff has played with Joy Kills Sorry, Yonder Mountain String Band, and with his own band. Both performers will also be teaching workshops at the Summit for all-access passholders. </p>
 
-<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Frank Solivan and Jack Dunlap (Friday 8pm - Szold Hall)</h3>
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Frank Solivan and Jack Dunlap </h3>
+<p className="font-semibold">(Friday 8pm - Szold Hall)</p>
 <p className="mt-4">Mandolin player Frank Solivan and guitarist Jack Dunlap both perform in progressive bluegrass ensemble Frank Solivan & Dirty Kitchen, winners of the 2014 IBMA Bluegrass Award for Instrumental Group of the Year. Frank is also the proprietor of Tone Slabs picks, exhibiting throughout the weekend at this year’s Summit.  </p>
 
 
@@ -408,16 +415,20 @@ export default function Music() {
 
           <h4 className="tracking-wide font-aurochs text-3xl mt-6">Saturday, August 22</h4>
 
-          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Shane Parish (Saturday 8pm - Maurer Hall) </h3>
+          <h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Shane Parish</h3>
+          <p className="font-semibold">(Saturday 8pm - Maurer Hall)</p>
 <p className="mt-4">Shane Parish is a guitarist, composer, improviser, and interpreter whose work focuses on the translation of music across traditions, canons, and technologies. Known for his precise and expressive fingerstyle technique and his nuanced approach to transcription, Parish treats interpretation as a compositional practice, using existing works as material for structural and sonic transformation. His recent solo recordings center on recontextualizing music not originally written for guitar, including Autechre Guitar (2026, Palilalia Records), where he crafts acoustic fingerstyle arrangements of music by the English electronic duo Autechre. </p>
 
-<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Jonathan Stout (Saturday 8pm - Maurer Hall)</h3>
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Jonathan Stout</h3>
+<p className="font-semibold">(Saturday 8pm - Maurer Hall)</p>
 <p className="mt-4">Jonathan Stout is a Southern California-based jazz guitarist best known as a bandleader in the swing dance world. This Fretboard Summit alum is a true scholar of archtop guitar, jazz and, especially, Benny Goodman guitarist Allan Reuss. </p>
 
-<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Twanguero (Saturday 8pm - Maurer Hall) </h3>
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Twanguero  </h3>
+<p className="font-semibold">(Saturday 8pm - Maurer Hall)</p>
 <p className="mt-4">Latin Grammy winner Diego Garcia is best known simply as Twanguero. A Collings Guitars artist, Twanguero can play it all: jazz, rockabilly, Spanish guitar, country and seemingly all points in between. He recently formed a world music collective, Los Silverbacks, along with Argentinian and Congolese artists. Based out of LA, Garcia is currently working on new music for both his Twanguero project and the new band.</p>
 
-<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Gabe Noel (Saturday 8pm - Maurer Hall)</h3>
+<h3 className="tracking-wide font-aurochs font-bold text-3xl mt-10 mb-2">Gabe Noel </h3>
+<p className="font-semibold">(Saturday 8pm - Maurer Hall)</p>
 <p className="mt-4">Saturday’s all-star jam will include a rare hometown performance from Gabe Noel, a musician who learned at the Old Town School of Folk Music before moving to LA and has appeared on records by Dijon, Sombr, Harry Styles, Kendrick Lamar and other superstars. Best known as a bassist, cellist, composer, and arranger, Gabe will be channeling his four-course roots through a 1935 Rickenbacher Spanish Electro Vibrola tenor guitar he picked up at an estate sale. He tunes it like a cello and has affectionately named it “the Chellar.”</p>
 
 
