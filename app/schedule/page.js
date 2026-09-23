@@ -935,49 +935,10 @@ export default function Schedule() {
           </Slider> */}
         {/* </div> */}
 
-
-        {/* this was commented out 2023 ignore */}
-        {/* uncomment when closer to the event, marketing will send */}
-        {/* <div className=" max-w-5xl w-full my-10 p-4 bg-[#A4CCDA] text-[#322D25]">
-          <div className="slider">
-            <Image src="/FS23_LineupSched_082423-1a.png" width={600} height={600} alt="Line Up Schedule 1" />
-            <Image src="/FS23_LineupSched_082423-2a.png" width={600} height={600} alt="Line Up Schedule 2"/>
-            <Image src="/FS23_LineupSched_082423-3a.png" width={600} height={600} alt="Line Up Schedule 3"/>
-          </div>
-        </div> */}
-
-        {/* <div className="w-auto mt-10">
-            <h2 className="px-10 tracking-wider font-aurochs font-normal uppercase text-5xl text-center">
-            2023 FRETBOARD SUMMIT DETAILS AVAILABLE SOON!
-            </h2>
-            <div className="w-full sm:w-3/4 p-10">
-
-            <p className="italic text-lg leading-relaxed">Updated August 2, 2023<br/>Schedule subject to change.</p>
-
-            <p className="underline font-bold mt-4  text-lg leading-relaxed">Campus Addresses & Locations:</p>
-            <p className="mb-4 text-lg leading-relaxed">
-            Old Town School of Folk Music - West, 4544 N. Lincoln Ave.<br/>
-            (Maurer Hall, Mabie Gallery, Workshop Rooms, Art Gallery, Music Store, Cafe & Bar)</p>
-
-            <p className="mb-10 text-lg leading-relaxed">
-            Old Town School of Folk Music - East, 4545 N. Lincoln Ave.<br/>
-            (Szold Hall, Luthier Showcase Exhibit Halls, East Lobby, Workshop Rooms, Cafe & Bar)</p>
-
-          </div>*/}
-
-        {/* </div> */}
-
-
-
-
         <div className="my-10 w-full max-w-5xl sm:flex-col sm:flex p-4 sm:py-14 sm:px-20 bg-[#A4CCDA] text-[#322D25]">
-
 
           {/* <input className="w-full my-4 p-2 text-gray-900" type="search" id="tableSearch" placeholder="Type to search Schedule..."></input> */}
 
-        
-
-          
             <p className="italic text-xs text-gray-900 leading-relaxed">Updated: August 12, 2026</p>
             <p className="font-bold text-base leading-relaxed">Fretboard Summit 2026: Full Schedule</p>
 
@@ -1036,7 +997,13 @@ export default function Schedule() {
                     <div className="font-semibold">
                       {event.loc}
                     </div>
-                    {event.desc !== "" &&(
+
+                    {event.desc !== "" && event.desc.length < 150 &&(
+                      <div className="mt-3" style={{ whiteSpace: 'pre-line' }}>
+                      {event.desc}
+                      </div>
+                    )}
+                    {event.desc !== "" && event.desc.length > 150 &&(
                     <div className="mt-3" style={{ whiteSpace: 'pre-line' }}>
                       {/* {event.desc} */}
                       {isExpanded === index ? event.desc : `${event.desc?.substring(0, 150)}...`}
