@@ -32,7 +32,7 @@ export const Navbar = () => {
         </div>
         <a className="flex justify-center mt-1.5" href="/" >
           <Image
-            src="/FS2026_Homepage_GlobalHeader_100325.png"
+            src="/FS2027_Homepage_GlobalHeader_111327.png"
             alt="Fretboard Summit Logo"
             width={600}
             height={48}
