@@ -939,15 +939,15 @@ export default function Schedule() {
 
           {/* <input className="w-full my-4 p-2 text-gray-900" type="search" id="tableSearch" placeholder="Type to search Schedule..."></input> */}
 
-            <p className="italic text-xs text-gray-900 leading-relaxed">Updated: August 12, 2026</p>
-            <p className="font-bold text-base leading-relaxed">Fretboard Summit 2026: Full Schedule</p>
+            <p className="italic text-xs text-gray-900 leading-relaxed">Updated: November 18, 2026</p>
+            <p className="font-bold text-base leading-relaxed">The full 2026 schedule is listed here as an example of what to expect at the 2027 Fretboard Summit! We're hard at work on a fresh lineup of great events for next year.</p>
 
-            <div className="my-2">
+            {/* <div className="my-2">
               <p className="italic text-sm" >New for 2026: All-Access passholders are entered to win a new Iris Guitar, a handmade tube amp and other amazing raffle prizes, in addition to sponsored giveaways, a stellar swag bag, the Summit happy hour, workshops, concerts and other perks.</p>
             </div>
             <div>
               <p className="italic text-sm" >Note: Summit workshops, clinics, interviews and concerts are available to All-Access Passholders only. Just want to guitar shop? We’ll have day Exhibitor Showcase tickets at the door for Friday and Saturday. </p>
-            </div>
+            </div> */}
 
             <div>
               <div className="mt-6 tab-buttons flex justify-center tabs gap-2 mb-4" id="tabs">

@@ -31,16 +31,16 @@ export default function Tickets() {
             height={100}
           />
           <h2 className="tracking-wider font-aurochs font-normal uppercase text-5xl text-center">
-            3-DAY ALL ACCESS PASS $400
+            3-DAY ALL ACCESS PASS $350
           </h2>
-          {/* <h2 className="tracking-wider font-aurochs font-normal uppercase text-4xl text-center">
-          Early Bird Price Now Available! Price Increases January 5, 2026
-          </h2> */}
+          <h2 className="tracking-wider font-aurochs font-normal uppercase text-4xl text-center">
+          Early Bird Price Now Available! Price Increases January 7, 2027
+          </h2>
           <h3 className="font-bold text-2xl my-6">
             Experience everything at the Fretboard Summit, including concerts, workshops, gear giveaways, gift bags &amp; more.
           </h3>
           <ul className="list-disc ml-4">
-            <li>Exclusive access to Fretboard Summit on Thursday, August 20</li>
+            <li>Exclusive access to Fretboard Summit on Thursday, August 19</li>
             <li>Admission to all events</li>
             <li className="ml-4">Live performances</li>
             <li className="ml-4">Workshops &amp; panel discussions</li>
@@ -65,7 +65,7 @@ export default function Tickets() {
               Limited to first 300 registered attendees.
           </h3>
           <div className="flex flex-row justify-evenly mt-6">
-            <a href="https://www.oldtownschool.org/concerts/2026/08-20-2026-fretboard-summit-2026/" className="text-center">
+            <a href="https://www.oldtownschool.org/concerts/2027/08-19-2027-fretboard-summit-2027/" className="text-center">
               <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
               Buy 3-day pass
               </button>
@@ -95,14 +95,14 @@ export default function Tickets() {
           <div className="block sm:flex sm:flex-row  max-w-5xl sm:p-0">
             <div className="flex justify-evenly w-full sm:flex-col sm:flex sm:w-2/4 sm:p-4 px-4">
               
-              {/* <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1] cursor-not-allowed">
-              Available Summer 2026<br/>Fri August 21
-              </button> */}
-              <Link href="https://www.oldtownschool.org/concerts/2026/08-20-2026-fretboard-summit-2026/" className="text-center">
+              <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1] cursor-not-allowed">
+              Available Summer 2027<br/>Fri August 20
+              </button>
+              {/* <Link href="https://www.oldtownschool.org/concerts/2027/08-19-2027-fretboard-summit-2027/" className="text-center">
                 <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1] ">
-                  Buy Day Pass: Fri, Aug 21
+                  Buy Day Pass: Fri, Aug 20
                 </button>
-              </Link>
+              </Link> */}
               {/* <ul className="list-disc ml-4 mt-6">
                 <li>Friday Highlights Include:</li>
                 <li className="ml-4">JHS Live: the Germanium Chef competition featuring Robert Keeley versus Heather Brown</li>
@@ -115,14 +115,14 @@ export default function Tickets() {
               </ul> */}
             </div>
             <div className="flex justify-evenly w-full sm:flex-col sm:flex sm:w-2/4 m-0 sm:p-4 px-4 mt-2 sm:mt-0">
-                {/* <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1] cursor-not-allowed">
-                Available Summer 2026<br/>Sat August 22
-                </button> */}
-              <Link href="https://www.oldtownschool.org/concerts/2026/08-20-2026-fretboard-summit-2026/" className="text-center">
-                <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
-                Buy Day Pass: Sat, Aug 22
+                <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1] cursor-not-allowed">
+                Available Summer 2026<br/>Sat August 21
                 </button>
-              </Link>
+              {/* <Link href="https://www.oldtownschool.org/concerts/2027/08-19-2027-fretboard-summit-2027/" className="text-center">
+                <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
+                Buy Day Pass: Sat, Aug 21
+                </button>
+              </Link> */}
               {/* <ul className="list-disc ml-4 mt-6">
                 <li>Saturday Highlights Include:</li>
                 <li className="ml-4">Tommy Emmanuel</li>
@@ -201,10 +201,10 @@ export default function Tickets() {
           </p> */}
           <div className="w-full sm:flex-row sm:flex sm:w-3/4">
             <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1]  cursor-not-allowed">
-            Showcase Only -  $30 Fri&nbsp;August&nbsp;21
+            Showcase Only -  Fri&nbsp;August&nbsp;20
             </button>
             <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#757f7e] text-[#F0E5D1]  cursor-not-allowed ml-0 sm:ml-1">
-            Showcase Only -  $30 Sat&nbsp;August&nbsp;22
+            Showcase Only -  Sat&nbsp;August&nbsp;21
             </button>
             {/* <Link href="https://www.oldtownschool.org/events/event.php?event_id=9483" className="text-center">
               <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
@@ -227,7 +227,7 @@ export default function Tickets() {
           </p>
 
           <div className="w-full sm:w-3/4">
-            <Link href="https://www.oldtownschool.org/concerts/2026/08-20-2026-jake-xerxes-fussell" className="text-center">
+            {/* <Link href="https://www.oldtownschool.org/concerts/2026/08-20-2026-jake-xerxes-fussell" className="text-center">
               <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
               Jake Xerxes Fussell - Concert Only
               </button>
@@ -241,8 +241,8 @@ export default function Tickets() {
               <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
               Michael Daves & Jacob Joliff - Concert Only
               </button>
-            </Link>
-            {/* <p>Pending Availability</p> */}
+            </Link> */}
+            <p>Pending Availability</p>
             {/* <Link href="https://www.oldtownschool.org/concerts/2025/08-23-2025-lyle-lovett/" className="text-center">
               <button className="my-2 tracking-wider text-3xl font-aurochs px-6 py-2 uppercase bg-[#2B6F6D] hover:bg-[#4DB3AC] text-[#F0E5D1]">
               Lyle Lovett Concert Only

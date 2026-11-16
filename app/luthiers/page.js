@@ -57,7 +57,7 @@ export default function Luthiers() {
           {/* <h3 className="font-aurochs mt-2 uppercase text-3xl sm:text-4xl tracking-wider leading-relaxed mb-8" >Please note: this is the 2024 Fretboard Summit exhibitor list, more details about 2025 will be available in Spring 2025 or earlier</h3> */}
 
           <h2 className="tracking-wider font-aurochs font-normal uppercase text-5xl text-center">
-          CONNECT WITH THE WORLD’S GREATEST GUITAR MAKERS AND TAKE HOME YOUR NEW FAVORITE GEAR
+          2026 Exhibitor List - 2027 Coming Soon
           </h2>
 
           <p className="font-bold text-2xl mt-6">The midwest’s largest and finest gathering of makers, players, and industry experts are here at Fretboard Summit. </p>
