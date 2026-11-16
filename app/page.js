@@ -62,7 +62,7 @@ export default function Home() {
                 height={50}
               />
               <Image
-                src="/FS2027_Homepage_LeftStack_111327.png"
+                src="/FS2027_Homepage_LeftStack_111627.png"
                 alt="banner left"
                 width={500}
                 height={400}
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <div className="w-full mt-6 sm:mt-0 sm:flex sm:w-2/4">
             <Image
-              src="/FS2027_Homepage_RightStack_111327.png"
+              src="/FS2027_Homepage_RightStack_111627.png"
               alt="banner left"
               width={500}
               height={400}
@@ -167,7 +167,7 @@ export default function Home() {
             <p>
               <span className="font-bold">Experience</span> the midwest’s largest and finest gathering of makers, players, and industry experts. Demo and purchase new, forthcoming and Summit-exclusive gear from over 50 luthiers, pedal makers, amp, and gear companies. 
             </p>
-            <p className="mt-2">2026 3-Day Passes On Sale Now!</p>
+            <p className="mt-2">2027 3-Day Passes On Sale Now!</p>
             <a href="/luthiers">
               <button className="text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1] my-2">
               2026 Exhibitors
@@ -188,8 +188,7 @@ export default function Home() {
               meet the makers
             </h2>
             <p>
-              <span className="font-bold">Meet</span> the makers and learn from the masters! Workshops. Master Classes. Jams and more. Plus an incredible lineup of featured concerts! A true gathering of the greats, featured speakers and attendees include Chris Martin IV (Martin Guitars), Josh Scott (JHS), Bob Taylor (Taylor Guitars), Jason Verlinde (Fretboard Journal), Terry Foster, Sofia Wolfson and so many more.
-
+              <span className="font-bold">Meet</span> Meet the makers and learn from the masters! Workshops. Master Classes. Jams and more. Plus an incredible lineup of featured concerts! A true gathering of the greats awaits! 2027 content announcing later in the year.
             </p>
             <a href="/schedule">
               <button className="text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1] my-2">
@@ -235,7 +234,8 @@ export default function Home() {
               Featured Concerts
             </h2>
             <p>
-              <span className="font-bold">Hear</span> amazing concerts & performances all summit long. Evening concerts from Deep Sea Diver (solo), Jake Xerxes Fussell, Cameron Knowler, Hand Habits, Michael Daves & Jacob Jolliff, and The Volcano Brothers. Of course, there’s always surprise guests at Fretboard Summit
+              <span className="font-bold">Hear</span> amazing concerts & performances all summit long. From pop-up performances to featured evening concerts every day. Past performers include Lyle Lovett, Tommy Emmanuel, John Leventhal, Bill Frisell, Deep Sea Diver, Jake Xerxes, The Volcano Brothers, Dave Hill, Charlie Hunter, Hand Habits, Blake Mills, Valerie June and many, many more.
+
             </p>
           </div>
           <div className="w-full sm:flex-col sm:flex sm:w-2/4 m-0 mt-4  sm:m-2 p-4 bg-[#A4CCDA] text-center text-[#322D25]">
@@ -252,8 +252,7 @@ export default function Home() {
               Guitar Geeks Unite!
             </h2>
             <p>
-              <span className="font-bold">Happenings</span>  are all around Fretboard Summit. In addition to 100 boutique brands and independent luthiers, there’s demos of vintage guitars and amplifiers, hands-on workshops, science fairs, a wine tasting, a 5k run and even the return of the Summit Pinewood Derby
-
+              <span className="font-bold">Happenings</span> are all around Fretboard Summit. In addition to over 100 boutique brands and independent luthiers, there’s demos of vintage guitars and amplifiers, hands-on workshops, science fairs, podcast tapings, and other surprises soon to be announced.
             </p>
           </div>
         </div>
