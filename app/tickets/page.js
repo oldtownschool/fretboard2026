@@ -34,7 +34,7 @@ export default function Tickets() {
             3-DAY ALL ACCESS PASS $350
           </h2>
           <h2 className="tracking-wider font-aurochs font-normal uppercase text-4xl text-center">
-          Early Bird Price Now Available! Price Increases January 7, 2027
+          Early Bird Price Now Available! Price Increases January 8, 2027
           </h2>
           <h3 className="font-bold text-2xl my-6">
             Experience everything at the Fretboard Summit, including concerts, workshops, gear giveaways, gift bags &amp; more.
