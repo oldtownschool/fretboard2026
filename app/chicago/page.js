@@ -164,10 +164,7 @@ export default function Directions() {
           <p className="text-xl my-4 italic font-bold">2027 block of rooms at Hotel Zachary is now live, limited availability.</p>
           
 
-          <Link
-            href="https://app.marriott.com/resview2?id=1795455126963&key=GRP&app=resvlink"
-            className="text-center mt-6"
-          >
+          <Link href="https://app.marriott.com/resview2?id=1795455126963&key=GRP&app=resvlink" className="text-center mt-6" >
             <button className="tracking-wider text-3xl font-aurochs px-6 py-2 uppercase hover:bg-[#4DB3AC] bg-[#2B6F6D] text-[#F0E5D1]">
               Book Rooms At Hotel Zachary 
             </button>
