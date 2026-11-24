@@ -11,6 +11,64 @@ export default function Luthier2027() {
   return (
     <>
       <Navbar />
+      <style jsx>{`
+      .exhibitor-directory {
+        --xd-text: inherit;
+        --xd-muted: #5f6b77;
+        --xd-line: #d9dfe5;
+        --xd-surface: #ffffff;
+        --xd-accent: #1f5f8b;
+        --xd-tag-bg: #eef3f7;
+        --xd-radius: 6px;
+        color: var(--xd-text);
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 3rem;
+      }
+      .exhibitor-directory * { box-sizing: border-box; }
+      .exhibitor-directory h1 { margin: 0 0 1rem; }
+
+      .xd-filters {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+        gap: .75rem;
+        margin-bottom: 1rem;
+      }
+      .xd-filters label { display: block; font-size: .875rem; font-weight: 700; }
+      .xd-filters input, .xd-filters select {
+        display: block; width: 100%; margin-top: .25rem;
+        padding: .5rem .6rem; font: inherit; color: inherit;
+        background: var(--xd-surface);
+        border: 1px solid var(--xd-line); border-radius: var(--xd-radius);
+      }
+      .xd-summary { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: baseline;
+        margin: 0 0 1rem; color: var(--xd-muted); }
+      .xd-clear { font: inherit; background: none; border: 0; padding: 0; color: var(--xd-accent);
+        text-decoration: underline; cursor: pointer; }
+
+      .xd-list { list-style: none; margin: 0; padding: 0;
+        display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; }
+      .xd-card { background: var(--xd-surface); border: 1px solid var(--xd-line);
+        border-radius: var(--xd-radius); padding: 1rem; }
+      .xd-company { margin: 0; font-size: 1.1rem; line-height: 1.3; }
+      .xd-room { margin: .25rem 0 0; color: var(--xd-muted); font-size: .9rem; }
+      .xd-tags { display: flex; flex-wrap: wrap; gap: .3rem; margin: .6rem 0 0; padding: 0; list-style: none; }
+      .xd-tag { font: inherit; font-size: .8rem; line-height: 1.4; padding: .1rem .55rem;
+        border-radius: 999px; border: 1px solid transparent; background: var(--xd-tag-bg);
+        color: inherit; cursor: pointer; }
+      .xd-tag:hover, .xd-tag[aria-pressed="true"] { border-color: var(--xd-accent); color: var(--xd-accent); }
+      .xd-other { display: block; margin-top: .4rem; font-size: .85rem; color: var(--xd-muted); }
+
+      .xd-message { padding: 1.5rem; border: 1px dashed var(--xd-line); border-radius: var(--xd-radius);
+        color: var(--xd-muted); }
+      .exhibitor-directory :focus-visible { outline: 3px solid var(--xd-accent); outline-offset: 2px; }
+
+      @media (max-width: 700px) {
+        .xd-filters { grid-template-columns: 1fr 1fr; }
+        .xd-filters .xd-search { grid-column: 1 / -1; }
+      }
+      `}
+      </style>
       <Script type="text/javascript">
         {` 
         (() => {
